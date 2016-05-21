@@ -1,0 +1,128 @@
+<div class="landing-view" role="main " layout="column">
+
+<!-- Hero no image-->
+<section class="section-ga section section-dark deep-teal">
+
+    <div class="site-width">
+        <div layout="column" layout-gt-xs="row">
+            <div flex-gt-xs="50">
+
+                    <h1 class="section-hero-h1">Contact a person from you ubrPics</h1>
+
+                    <p class="font-large">Need to get more information? Or, want to set appointment custom,personalized Service. Give us a call or drop us an email</p>
+
+            </div>
+            <div flex-gt-xs="10"></div>
+            <div flex-gt-xs="40">
+                <h2>Tel: 267-XXX-XXXX</h2>
+                <p class="font-large">Or, you can contact us using the form below.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="myfab" layout="row" layout-align="center center">
+        <md-button class="md-fab myfab" aria-label="Eat cake">
+            <!--<md-icon md-svg-src="img/icons/cake.svg"></md-icon>-->
+            <svg class="icon-fab-scroll" enable-background=
+                    "new 0 0 32 32" height="14px" version="1.1" viewbox="0 0 32 32" width="14px" x="5px"
+        xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink=
+                    "http://www.w3.org/1999/xlink" y="0px">
+        <polygon points="28.2,6.1 16,18.3 3.8,6.1 0,9.9 16,25.9 32,9.9"></polygon></svg>
+        </md-button>
+    </div>
+
+</section>
+<!--section end of Hero withoutHero image section.-->
+
+
+<!-- Quote section had quotation-extra as a .... -->
+<section class="section-ga">
+    <div class="site-width">
+        <div layout="row" layout-align="center">
+            <div flex="50">
+                <form name="addPostForm" ng-submit="AddPost()">
+                    <fieldset class="contact-us">
+
+                        <!-- Form Name -->
+                        <!--<legend>Create Post</legend>-->
+
+                        <!-- Text input-->
+                        <md-input-container>
+                            <label class="col-md-4 control-label" for="firstName">First Name</label>
+                            <input id="firstName" name="firstName" type="text" ng-model="firstName">
+                        </md-input-container>
+
+                        <!-- Textarea -->
+                        <md-input-container>
+                            <label class="col-md-4 control-label" for="email">email</label>
+                            <textarea id="contact-email" name="email" ng-model="email"></textarea>
+
+                        </md-input-container>
+
+                        <md-input-container>
+                            <label>What services are you interested in?</label>
+                            <md-select ng-model="service">
+                                <md-option>
+                                   Service one
+                                </md-option>
+                                <md-option>
+                                    Service two
+                                </md-option>
+                                <md-option>
+                                    Service three
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+
+
+
+                        <!-- Button -->
+                        <md-input-container>
+
+
+                            <md-button name="singlebutton" class="send-button md-raised" ng-disabled="!article.title || !article.text" type="submit" />Send</md-buttonr>
+
+                        </md-input-container>
+
+                    </fieldset>
+                </form>
+
+            </div>
+            <div flex="50">
+                <form name="addPostForm" ng-submit="AddPost()">
+                    <fieldset class="contact-us">
+
+
+
+                        <!-- Text input-->
+                        <md-input-container>
+
+                            <label class="col-md-4 control-label" for="lastName">First Name</label>
+                            <input id="lastName" name="lastName" type="lastName" ng-model="lastName">
+
+                        </md-input-container>
+
+                        <!-- Textarea -->
+                        <md-input-container>
+                            <label class="col-md-4 control-label" for="phoneNumber">Phone Number</label>
+                            <textarea id="contact-phoneNumber" name="phoneNumber" ng-model="phoneNumber"></textarea>
+
+                        </md-input-container>
+
+
+                    </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--the end of quote section-->
+
+
+
+<section></section>
+
+</div>

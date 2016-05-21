@@ -1,0 +1,46 @@
+<md-sidenav class="md-sidenav-right md-whiteframe-z2"  md-component-id="right">
+    <!-- left sidebar header -->
+    <md-toolbar class="md-jamie-white">
+        <div layout="row" layout-padding>
+            <div>
+                <div class="pics-app-nav-top-left">Current</div>
+                <div class="pics-app-nav-bottom-left">ubrPics</div>
+            </div>
+            <div flex></div>
+
+            <div class="pics-app-nav-right"><a href="#/pics-app">All</a></div>
+        </div>
+
+        <div class="pics-left-nav-hr"></div>
+
+  </md-toolbar>
+
+  <md-content layout-padding ng-controller="RightSidebarCtrl">
+        <md-button ng-click="close()" class="md-primary" hide-gt-xs>
+            Close Sidenav Left
+        </md-button>
+        <!--<p hide-md show-gt-md>-->
+            <!--This sidenav is locked open on your device. To go back to the default behavior,-->
+            <!--narrow your display.-->
+        <!--</p>-->
+      <div class="more-padding-4" hide-md show-gt-xs>
+          <div class="left-nav-category-header">
+              Category
+          </div>
+
+
+          <ul class="pics-app-ul">
+
+              <li class="pics-app-li" ng-click="gallery.myFilter = {category:'silicon valley'}">
+                  <a href="">Silicon Valley/Tech</a></li>
+              <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'other influencers'}">
+                  <a href="">Other Influencers/Icons</a></li>
+              <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'smart locations'}"><a href="">Smart Locations</a></li>
+              <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'cheeky'}"><a href="">Cheeky Options</a></li>
+              <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'featured photographer'}"><a href="">Featured photographers</a></li>
+              <li class="pics-app-li"><a ng-click="mgallery.myFilter = {}">All</a></li>
+              <!--<a href="#/pics-app">Other Influencers & Icons</a>-->
+          </ul>
+      </div>
+   </md-content>
+</md-sidenav>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html ng-app="ganalytics">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganalytics- Standard</title>
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&lang=en" rel=
+            "stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&lang=en" rel=
+            "stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Product+Sans:400&lang=en" rel=
+            "stylesheet">
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="../bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/site-colors.css">
+    <link rel="stylesheet" href="components/gallery/gallery.css">
+    <link rel="stylesheet" href="components/pics.detail/pics.detail.css">
+    <link rel="stylesheet" href="views/landing.css">
+    <link rel="stylesheet" href="views/for-individuals.css"/>
+
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="views/contact-us.css">
+    <link rel="stylesheet" href="views/for-groups.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/header-toolbar.css"/>
+    <link rel="stylesheet" href="css/sandbox.css"/>
+
+</head>
+<body ng-controller="fullSidebarController">
+  <md-sidenav class="md-sidenav-right md-whiteframe-z2"  md-component-id="right">
+      <!-- left sidebar header -->
+      <md-toolbar class="md-jamie-white">
+          <div layout="row" layout-padding>
+              <div>
+                  <div class="pics-app-nav-top-left">Current</div>
+                  <div class="pics-app-nav-bottom-left">ubrPics</div>
+              </div>
+              <div flex></div>
+
+              <div class="pics-app-nav-right"><a href="#/pics-app">All</a></div>
+          </div>
+
+          <div class="pics-left-nav-hr"></div>
+
+      </md-toolbar>
+
+    <md-content layout-padding ng-controller="RightCtrl">
+          <md-button ng-click="close()" class="md-primary" hide-gt-xs>
+              Close Sidenav Left
+          </md-button>
+          <!--<p hide-md show-gt-md>-->
+              <!--This sidenav is locked open on your device. To go back to the default behavior,-->
+              <!--narrow your display.-->
+          <!--</p>-->
+        <div class="more-padding-4" hide-md show-gt-xs>
+            <div class="left-nav-category-header">
+                Category
+            </div>
+
+
+            <ul class="pics-app-ul">
+
+                <li class="pics-app-li" ng-click="gallery.myFilter = {category:'silicon valley'}">
+                    <a href="">Silicon Valley/Tech</a></li>
+                <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'other influencers'}">
+                    <a href="">Other Influencers/Icons</a></li>
+                <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'smart locations'}"><a href="">Smart Locations</a></li>
+                <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'cheeky'}"><a href="">Cheeky Options</a></li>
+                <li class="pics-app-li" ng-click="gallery.myFilter = {category: 'featured photographer'}"><a href="">Featured photographers</a></li>
+                <li class="pics-app-li"><a ng-click="mgallery.myFilter = {}">All</a></li>
+                <!--<a href="#/pics-app">Other Influencers & Icons</a>-->
+            </ul>
+        </div>
+     </md-content>
+  </md-sidenav>
+
+<md-toolbar class="main-header" layout="column">
+
+  <div layout="row">
+    <h1 class="product-logo header-h1" flex="grow">
+        <a href="#">
+            <img src="/images-1/logoimages/logo-el-full-35h.png" alt="" hide show-gt-xs />
+            <img src="/images-1/logoimages/logo-el-full-30h-noslogan.png" alt="" hide-gt-xs />
+            <!-- <img src="http://placehold.it/160x30?text=logo" alt=""/> -->
+        </a>
+    </h1>
+    <div layout="column" class="" flex="25" layout-align="center end" ng-controller="RightCtrl" hide-gt-xs>
+      <md-button class="main-menu-toolbar-button md-raised" ng-click="toggleRight()">
+        <md-icon class="main-menu-toolbar" md-svg-src="/images-1/icons/ic_menu_24px.svg"></md-icon>
+      </md-button>
+    </div>
+
+    </div>
+    <nav class="main-navigation" layout="row" hide-xs>
+    <div layout="row">
+
+
+           <md-button><a href="#/home" class="main-nav-links">Home</a></md-button>
+
+
+            <md-button><a href="#/gallery" class="main-nav-links">Gallery</a></md-button>
+
+
+            <md-button><a href="#/for-individuals" class="main-nav-links">How It Works</a></md-button>
+
+         <md-button><a href="#/custom-services" class="main-nav-links">Custom</a></md-button>
+        <md-button><a href="#/contact-us" class="main-nav-links">Contact Us</a></md-button>
+
+    </div>
+    <div class="nav-dropdown-wrapper">
+      <a href="#/sandbox" class="nav-dropdown-trigger">A Philadelphia Company</a>
+    </div>
+        <div class="header-cta">
+            <a href="#/for-groups" class="main-nav-links">
+                <md-button class="md-raised md-f4f4f4">Group Friendly</md-button>
+            </a>
+
+
+
+            </script>
+        </div>
+    </nav>
+</md-toolbar>
+
+<!-- Main -->
+<div class="main" role="main " layout="column">
+  <div ui-view name="main_content" id="main-content" class="animated fadeIn"></div>
+</div>
+
+<footer class="footer" id="footer" layout="row">
+    <div class="site-width" flex="grow">
+      <div layout="row" class="footer-upper" layout-padding layout-align="center center">
+        <div flex="50" class="footer-social">
+          <dl>
+            <dt>Follow us on:</dt>
+              <dd>
+                <a href="#">
+                  <img class="icon-footer-gplus"
+                       src="http://placehold.it/20x20"/>
+                </a>
+              </dd>
+              <dd>
+                <a href="#">
+                  <img class="icon-footer-gplus"
+                       src="http://placehold.it/20x20"/>
+                </a>
+              </dd>
+              <dd>
+                <a href="#">
+                  <img class="icon-footer-gplus"
+                       src="http://placehold.it/20x20"/>
+                </a>
+              </dd>
+              <dd>
+                <a href="#">
+                  <img class="icon-footer-gplus"
+                       src="http://placehold.it/20x20"/>
+                </a>
+              </dd>
+
+          </dl>
+        </div>
+
+        <div flex="50" class="footer-meta-links" layout-align="end center">
+          <div layout="row" layout-align="end end">
+          <ul flex="50">
+            <li>About</li>
+            <li>Contact Us</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+        <nav class="footer-nav" layout="row" layout-padding layout-align="center center">
+          <dl flex="25">
+            <dt><a href="#">Home</a></dt>
+          </dl><dl flex="25">
+            <dt><a href="#">Gallery</a></dt>
+          </dl><dl flex="25">
+            <dt><a href="#">How It Works</a></dt>
+          </dl><dl flex="25">
+            <dt><a href="#">Custom</a></dt>
+          </dl>
+
+        </nav>
+        <div class="footer-lower" layout="row" layout-padding>
+          <div class="footer-meta-links" flex="70">
+            <ul>
+              <li><a href="">Help</a></li>
+              <li><a href="">Google</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-locale-switcher" flex="30">
+             <div layout="column" layout-align="center center">
+               <div class="">
+                 Language
+               </div>
+             </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</footer>
+<!-- bower:js -->
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
+<script type="text/javascript" src="../bower_components/angular-material/angular-material.min.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../node_modules/angular-resource/angular-resource.min.js"></script>
+<!-- end bower -->
+
+
+<!-- ganalytics scripts -->
+
+<!-- Angular 1.4 app, controller, modules scripts ==========================-->
+<script src="modules/myAmaterialModule/myAmModule.js"></script>
+<script src="modules/myAmaterialModule/sidenavDemo1/sidenavDemo1.js"></script>
+<script src="modules/myAmaterialModule/sidenavWithTbb/sidenavWithTbb.js"></script>
+
+
+<script src="app.js"></script>
+<script src="directives/bookingdirective.js"></script>
+
+<!-- Ajs and component stuff -->
+<script src="components/gallery/gallerycontroller.js"></script>
+<script src="components/pics.detail/picsdetailctrl.js"></script>
+<script src="services/pics-options.js"></script>
+<script src="services/pics-service1.js"></script>
+<script src="filters/appfilters.js"></script>
+
+<!-- end ganalytics scripts -->
+
+</body>
+</html>

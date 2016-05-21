@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/booking/booking-directive.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">app/components/booking/</a> booking-directive.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">11.09% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>55/496</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/709</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/124</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">39.13% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/23</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">var app = angular.module('ganalytics');
+    app.directive('bookingDirective', bookingDirective);
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function bookingDirective(bookingService) {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        restrict: 'A',
+        link: <span class="fstat-no" title="function not covered" >function (scope, ielement, attributes) {</span>
+<span class="cstat-no" title="statement not covered" >          var event = new Event('DOMContentLoaded');</span>
+<span class="cstat-no" title="statement not covered" >          console.log(event);</span>
+<span class="cstat-no" title="statement not covered" >        var myElement = document.getElementById('booking');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        console.log(myElement);</span>
+<span class="cstat-no" title="statement not covered" >        var dispatch =  myElement.dispatchEvent;</span>
+<span class="cstat-no" title="statement not covered" >        console.log(bookingService.zapla);</span>
+<span class="cstat-no" title="statement not covered" >        bookingService.zapla(dispatch, event);</span>
+        }
+      };
+      // $scope.startBookingService = function () {
+      //
+      // };
+    }
+&nbsp;
+    app.factory('bookingService', bookingService);
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function bookingService() {</span>
+<span class="cstat-no" title="statement not covered" >      return {</span>
+        zapla: <span class="fstat-no" title="function not covered" >function(dispatchfn, e) {</span>
+<span class="cstat-no" title="statement not covered" >          dispatchfn(e);</span>
+<span class="cstat-no" title="statement not covered" >          console.log(dispatchfn);</span>
+<span class="cstat-no" title="statement not covered" >          dispatchfn.isTrusted = true;</span>
+<span class="cstat-no" title="statement not covered" >          console.log(dispatchfn);</span>
+<span class="cstat-no" title="statement not covered" >          !<span class="fstat-no" title="function not covered" >function(t){<span class="fstat-no" title="function not covered" ></span>function e(n){<span class="cstat-no" title="statement not covered" ></span>if(o[n])<span class="cstat-no" title="statement not covered" >return o[n].exports;<span class="cstat-no" title="statement not covered" >v</span></span>ar r=o[n]={exports:{},id:n,loaded:!1};<span class="cstat-no" title="statement not covered" >r</span>eturn t[n].call(r.exports,r,r.exports,e),r.loaded=!0,r.exports}<span class="cstat-no" title="statement not covered" ></span>var o={};<span class="cstat-no" title="statement not covered" >r</span>eturn e.m=t,e.c=o,e.p="",e(0)}</span>({0:<span class="fstat-no" title="function not covered" >function(t,e,o){</span>"use strict";<span class="cstat-no" title="statement not covered" >var n=o(130),r=o(228),i=o(127),a=o(160),s=o(128),h=o(43),c=12,l="https://embed.zapla.co",f="e5f9776";<span class="cstat-no" title="statement not covered" >i</span>f(!window.postMessage||!window.JSON)<span class="cstat-no" title="statement not covered" >throw new Error("This browser is not supported by the Zapla widget.");<span class="cstat-no" title="statement not covered" >v</span></span>ar u="string"==typeof(new XMLHttpRequest).responseType,p=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>if(!t)<span class="cstat-no" title="statement not covered" >return!1;<span class="cstat-no" title="statement not covered" >f</span></span>or(var e=t.split(","),o=0,n=e.length;n&gt;o;o++)<span class="cstat-no" title="statement not covered" >e[o]=parseInt(e[o].replace(/[^\d]*/,""),10);<span class="cstat-no" title="statement not covered" >r</span></span>eturn e[0]&amp;&amp;e[1]&amp;&amp;e[2]?{R:e[0],G:e[1],B:e[2]}:!1}</span>,d=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>var o=p(t),n=p(e);<span class="cstat-no" title="statement not covered" >r</span>eturn o&amp;&amp;n?s.diff(s.rgb_to_lab(o),s.rgb_to_lab(n))&lt;15:!1}</span>,b=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>var e="";<span class="cstat-no" title="statement not covered" >f</span>or(var o in t)<span class="cstat-no" title="statement not covered" >t.hasOwnProperty(o)&amp;&amp;t[o]&amp;&amp;(e+=o+":"+t[o]+";");<span class="cstat-no" title="statement not covered" >r</span></span>eturn e}</span>,v=<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="cstat-no" title="statement not covered" ></span>e.height=o+"px !important",t.setAttribute("style",b(e)),t.height=o+"px"}</span>,m=<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="cstat-no" title="statement not covered" ></span>for(var n=!0;n;){<span class="cstat-no" title="statement not covered" >var r=t,i=e,a=o;<span class="cstat-no" title="statement not covered" >n</span>=!1;<span class="cstat-no" title="statement not covered" >v</span>ar s;<span class="cstat-no" title="statement not covered" >w</span>indow.getComputedStyle?s=document.defaultView.getComputedStyle(r,null).getPropertyValue(i):r.currentStyle&amp;&amp;(s=r.currentStyle[i]?r.currentStyle[i]:r.currentStyle[a]);{<span class="cstat-no" title="statement not covered" ></span>if(r===document.documentElement||""!==s&amp;&amp;"transparent"!==s&amp;&amp;"rgba(0, 0, 0, 0)"!==s)<span class="cstat-no" title="statement not covered" >return s||"";<span class="cstat-no" title="statement not covered" >t</span></span>=r.parentNode,e=i,o=a,n=!0,s=void 0}</span>}}</span>,g=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>if(-1!==e.indexOf("://fonts.googleapis.com"))<span class="cstat-no" title="statement not covered" >return void t.contentWindow.postMessage(JSON.stringify({type:"add:link",data:{href:e.replace(/^https?:\/\//,"https://")}}),"*");<span class="cstat-no" title="statement not covered" >i</span></span>f(-1!==e.indexOf("://use.typekit.net")){<span class="cstat-no" title="statement not covered" >var o=new XMLHttpRequest;<span class="cstat-no" title="statement not covered" >r</span>eturn o.open("GET",e,!0),o.onload=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>t.contentWindow.postMessage(JSON.stringify({type:"add:stylesheet",data:{css:e.currentTarget.responseText}}),"*")}</span>,void o.send()}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn-1!==e.indexOf("editmysite.com")&amp;&amp;-1!==e.indexOf("/fonts/")?void t.contentWindow.postMessage(JSON.stringify({type:"add:link",data:{href:e.replace(/^https?:\/\//,"https://")}}),"*"):void 0}</span>,y=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>[].forEach&amp;&amp;[].forEach.call(document.styleSheets||[],<span class="fstat-no" title="function not covered" >function(o){<span class="cstat-no" title="statement not covered" ></span>var n=window.location.href.slice(0,-1*window.location.pathname.length);<span class="cstat-no" title="statement not covered" >r</span>eturn o.href&amp;&amp;-1===o.href.indexOf(n)?void g(t,o.href):void[].forEach.call(o.cssRules||[],<span class="fstat-no" title="function not covered" >function(n){<span class="cstat-no" title="statement not covered" ></span>return n.href&amp;&amp;-1!==n.href.indexOf("//fonts.googleapis.com")?void t.contentWindow.postMessage(JSON.stringify({type:"add:link",data:{href:r.resolve("https://",n.href).replace(/^https?:\/\//,"https://")}}),"*"):void(u&amp;&amp;-1!==n.cssText.indexOf("@font-face")&amp;&amp;n.cssText.match(/url\(.*?\)/g).forEach(<span class="fstat-no" title="function not covered" >function(a){<span class="cstat-no" title="statement not covered" ></span>if(a=a.replace(/url\(["|']?(.*?)["|']?\)/,"$1"),a=r.resolve(o.href,a),/\.woff$/.test(a)){<span class="cstat-no" title="statement not covered" >var s=!1;<span class="cstat-no" title="statement not covered" >f</span>or(var h in e)<span class="cstat-no" title="statement not covered" >e.hasOwnProperty(h)&amp;&amp;"font-family"in e[h]&amp;&amp;-1===e[h]["font-family"].indexOf(n.style.getPropertyValue("font-family"))&amp;&amp;(s=!0);<span class="cstat-no" title="statement not covered" >i</span></span>f(s){<span class="cstat-no" title="statement not covered" >var c=new XMLHttpRequest;<span class="cstat-no" title="statement not covered" >c</span>.open("GET",a,!0),c.responseType="arraybuffer",c.onload=<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>var o=new Uint8Array(e.currentTarget.response),r=["@font-face {","   font-family: "+n.style.getPropertyValue("font-family")+";","   font-style: "+n.style.getPropertyValue("font-style")+";","   font-weight: "+n.style.getPropertyValue("font-weight")+";",'   src: url("data:application/x-font-woff;base64,'+i.fromByteArray(o)+'") format("woff");',"}"].join("\n");<span class="cstat-no" title="statement not covered" >t</span>.contentWindow.postMessage(JSON.stringify({type:"add:stylesheet",data:{css:r}}),"*")}</span>,c.send()}</span>}</span>}</span>))}</span>)}</span>)}</span>,w=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>var o="zapla_widget_"+e,n=t.src.split("#")[1].split(","),r=n[0].split("=")[1];<span class="cstat-no" title="statement not covered" >i</span>f(!t.previousSibling||!t.previousSibling.id||-1===t.previousSibling.id.indexOf("zapla_widget_"+e)){<span class="cstat-no" title="statement not covered" >var i=document.createElement("div");<span class="cstat-no" title="statement not covered" >i</span>.id=o,t.parentNode.insertBefore(i,t);<span class="cstat-no" title="statement not covered" >v</span>ar s={display:"block !important",width:"100% !important",border:"0 !important",overflow:"hidden !important","max-width":"none !important","max-height":"none !important"},u={".env-a":{},".env-heading":{},".env-p":{},".env-btn":{},".env-input":{},".env-color":{},".env-box":{},".env-box-p":{},".env-box-a":{},".env-border-radius":{},".env-font":{},".env-font-size":{}},p=document.createElement("h2");<span class="cstat-no" title="statement not covered" >p</span>.setAttribute("style","display: none !important;"),p.className="h2",i.appendChild(p),u[".env-heading"].color=m(p,"color","color"),u[".env-heading"]["font-family"]=m(p,"font-family","fontFamily"),u[".env-heading"]["font-size"]=m(p,"font-size","fontSize"),u[".env-heading"]["font-style"]=m(p,"font-style","fontSize"),u[".env-heading"]["font-weight"]=m(p,"font-weight","fontWeight"),u[".env-heading"]["letter-spacing"]=m(p,"letter-spacing","letterSpacing"),u[".env-heading"]["text-decoration"]=m(p,"text-decoration","textDecoration"),u[".env-heading"]["text-transform"]=m(p,"text-transform","textTransform"),u[".env-heading"]["-webkit-font-smoothing"]=m(p,"-webkit-font-smoothing","webkitFontSmoothing"),u[".env-heading"]["-moz-osx-font-smoothing"]=m(p,"-moz-osx-font-smoothing","mozOsxFontSmoothing"),u[".env-heading"]["-webkit-backface-visibility"]=m(p,"-webkit-backface-visibility","webkitBackfaceVisibility"),parseInt(u[".env-heading"]["font-size"],10)&lt;=c&amp;&amp;(u[".env-heading"]["font-size"]=c+"px"),i.removeChild(p);<span class="cstat-no" title="statement not covered" >v</span>ar w=document.createElement("p");<span class="cstat-no" title="statement not covered" >w</span>.setAttribute("style","display: none !important;"),i.appendChild(w),u[".env-p"].color=m(w,"color","color"),u[".env-p"]["font-family"]=m(w,"font-family","fontFamily"),u[".env-p"]["font-size"]=m(w,"font-size","fontSize"),u[".env-p"]["font-style"]=m(w,"font-style","fontSize"),u[".env-p"]["font-weight"]=m(w,"font-weight","fontWeight"),u[".env-p"]["letter-spacing"]=m(w,"letter-spacing","letterSpacing"),u[".env-p"]["text-decoration"]=m(w,"text-decoration","textDecoration"),u[".env-p"]["text-transform"]=m(w,"text-transform","textTransform"),u[".env-p"]["line-height"]=m(w,"line-height","lineHeight"),u[".env-p"]["-webkit-font-smoothing"]=m(w,"-webkit-font-smoothing","webkitFontSmoothing"),u[".env-p"]["-moz-osx-font-smoothing"]=m(w,"-moz-osx-font-smoothing","mozOsxFontSmoothing"),u[".env-p"]["-webkit-backface-visibility"]=m(w,"-webkit-backface-visibility","webkitBackfaceVisibility"),parseInt(u[".env-p"]["font-size"],10)&lt;=c&amp;&amp;(u[".env-p"]["font-size"]=c+"px"),u[".env-color"].color=u[".env-p"].color,u[".env-color"]["font-family"]=u[".env-p"]["font-family"],u[".env-color"]["font-style"]=u[".env-p"]["font-style"],u[".env-color"]["font-weight"]=u[".env-p"]["font-weight"],u[".env-font"]["font-family"]=u[".env-p"]["font-family"],u[".env-font"]["font-style"]=u[".env-p"]["font-style"],u[".env-font"]["font-weight"]=u[".env-p"]["font-weight"],u[".env-font"]["letter-spacing"]=u[".env-p"]["letter-spacing"],u[".env-font"]["text-decoration"]=u[".env-p"]["text-decoration"],u[".env-font"]["text-transform"]=u[".env-p"]["text-transform"],u[".env-font"]["-webkit-font-smoothing"]=u[".env-p"]["-webkit-font-smoothing"],u[".env-font"]["-moz-osx-font-smoothing"]=u[".env-p"]["-moz-osx-font-smoothing"],u[".env-font"]["-webkit-backface-visibility"]=u[".env-p"]["-webkit-backface-visibility"],u[".env-font-size"]["font-size"]=u[".env-p"]["font-size"],i.removeChild(w);<span class="cstat-no" title="statement not covered" >v</span>ar x=document.createElement("a");<span class="cstat-no" title="statement not covered" >x</span>.setAttribute("style","display: none !important;"),i.appendChild(x),u[".env-a"].color=m(x,"color","color"),u[".env-a"]["font-weight"]=m(x,"font-weight","fontWeight"),u[".env-a"]["letter-spacing"]=m(x,"letter-spacing","letterSpacing"),u[".env-a"]["text-decoration"]=m(x,"text-decoration","textDecoration"),u[".env-a"]["text-transform"]=m(x,"text-transform","textTransform"),d(u[".env-a"].color,m(x,"background-color","backgroundColor"))&amp;&amp;(u[".env-a"].color=u[".env-p"].color),i.removeChild(x);<span class="cstat-no" title="statement not covered" >v</span>ar k=document.createElement("div");<span class="cstat-no" title="statement not covered" >k</span>.className="page",i.appendChild(k);<span class="cstat-no" title="statement not covered" >v</span>ar A=document.createElement("div");<span class="cstat-no" title="statement not covered" >A</span>.className="form-wrapper elgg-form",k.appendChild(A);<span class="cstat-no" title="statement not covered" >v</span>ar C=document.createElement("div");<span class="cstat-no" title="statement not covered" >C</span>.className="field-list",A.appendChild(C);<span class="cstat-no" title="statement not covered" >v</span>ar z=document.createElement("div");<span class="cstat-no" title="statement not covered" >z</span>.className="field",C.appendChild(z);<span class="cstat-no" title="statement not covered" >v</span>ar S=document.createElement("input");<span class="cstat-no" title="statement not covered" >S</span>.type="text",S.className="form-control field-element input-text wsite-form-input wpcf7-text",S.setAttribute("style","display: none !important;"),z.appendChild(S),u[".env-input"].color=m(S,"color","color"),u[".env-input"]["background-color"]=m(S,"background-color","backgroundColor"),u[".env-input"]["background-image"]=m(S,"background-image","backgroundImage"),u[".env-input"]["background-repeat"]=m(S,"background-repeat","backgroundRepeat"),u[".env-input"]["background-position"]=m(S,"background-position","backgroundPosition"),u[".env-input"]["background-size"]=m(S,"background-size","backgroundSize"),u[".env-input"]["font-family"]=m(S,"font-family","fontFamily"),u[".env-input"]["font-size"]=m(S,"font-size","fontSize"),u[".env-input"]["font-style"]=m(S,"font-style","fontSize"),u[".env-input"]["font-weight"]=m(S,"font-weight","fontWeight"),u[".env-input"]["letter-spacing"]=m(S,"letter-spacing","letterSpacing"),u[".env-input"]["text-decoration"]=m(S,"text-decoration","textDecoration"),u[".env-input"]["text-transform"]=m(S,"text-transform","textTransform"),u[".env-input"]["border-top-width"]=m(S,"border-top-width","borderTopWidth"),u[".env-input"]["border-top-style"]=m(S,"border-top-style","borderTopStyle"),u[".env-input"]["border-top-color"]=m(S,"border-top-color","borderTopColor"),u[".env-input"]["border-right-width"]=m(S,"border-right-width","borderRightWidth"),u[".env-input"]["border-right-style"]=m(S,"border-right-style","borderRightStyle"),u[".env-input"]["border-right-color"]=m(S,"border-right-color","borderRightColor"),u[".env-input"]["border-bottom-width"]=m(S,"border-bottom-width","borderBottomWidth"),u[".env-input"]["border-bottom-style"]=m(S,"border-bottom-style","borderBottomStyle"),u[".env-input"]["border-bottom-color"]=m(S,"border-bottom-color","borderBottomColor"),u[".env-input"]["border-left-width"]=m(S,"border-left-width","borderLeftWidth"),u[".env-input"]["border-left-style"]=m(S,"border-left-style","borderLeftStyle"),u[".env-input"]["border-left-color"]=m(S,"border-left-color","borderLeftColor"),u[".env-input"]["border-top-left-radius"]=m(S,"border-top-left-radius","borderTopLeftRadius"),u[".env-input"]["border-top-right-radius"]=m(S,"border-top-right-radius","borderTopRightRadius"),u[".env-input"]["border-bottom-right-radius"]=m(S,"border-bottom-right-radius","borderBottomRightRadius"),u[".env-input"]["border-bottom-left-radius"]=m(S,"border-bottom-left-radius","borderBottomLeftRadius"),u[".env-input"]["box-shadow"]=m(S,"box-shadow","boxShadow"),u[".env-input"]["-webkit-font-smoothing"]=m(S,"-webkit-font-smoothing","webkitFontSmoothing"),u[".env-input"]["-moz-osx-font-smoothing"]=m(S,"-moz-osx-font-smoothing","mozOsxFontSmoothing"),u[".env-input"]["-webkit-backface-visibility"]=m(S,"-webkit-backface-visibility","webkitBackfaceVisibility"),parseInt(u[".env-input"]["font-size"],10)&lt;=c&amp;&amp;(u[".env-input"]["font-size"]=c+"px"),u[".env-box"]["background-color"]=u[".env-input"]["background-color"],u[".env-box"]["background-image"]=u[".env-input"]["background-image"],u[".env-box"]["background-repeat"]=u[".env-input"]["background-repeat"],u[".env-box"]["background-position"]=u[".env-input"]["background-position"],u[".env-box"]["background-size"]=u[".env-input"]["background-size"],u[".env-box"]["border-top-width"]=u[".env-input"]["border-top-width"],u[".env-box"]["border-top-style"]=u[".env-input"]["border-top-style"],u[".env-box"]["border-top-color"]=u[".env-input"]["border-top-color"],u[".env-box"]["border-right-width"]=u[".env-input"]["border-right-width"],u[".env-box"]["border-right-style"]=u[".env-input"]["border-right-style"],u[".env-box"]["border-right-color"]=u[".env-input"]["border-right-color"],u[".env-box"]["border-bottom-width"]=u[".env-input"]["border-bottom-width"],u[".env-box"]["border-bottom-style"]=u[".env-input"]["border-bottom-style"],u[".env-box"]["border-bottom-color"]=u[".env-input"]["border-bottom-color"],u[".env-box"]["border-left-width"]=u[".env-input"]["border-left-width"],u[".env-box"]["border-left-style"]=u[".env-input"]["border-left-style"],u[".env-box"]["border-left-color"]=u[".env-input"]["border-left-color"],u[".env-box"]["border-top-left-radius"]=u[".env-input"]["border-top-left-radius"],u[".env-box"]["border-top-right-radius"]=u[".env-input"]["border-top-right-radius"],u[".env-box"]["border-bottom-right-radius"]=u[".env-input"]["border-bottom-right-radius"],u[".env-box"]["border-bottom-left-radius"]=u[".env-input"]["border-bottom-left-radius"],i.removeChild(k),u[".env-border-radius"]["border-top-left-radius"]=u[".env-input"]["border-top-left-radius"],u[".env-border-radius"]["border-top-right-radius"]=u[".env-input"]["border-top-right-radius"],u[".env-border-radius"]["border-bottom-right-radius"]=u[".env-input"]["border-bottom-right-radius"],u[".env-border-radius"]["border-bottom-left-radius"]=u[".env-input"]["border-bottom-left-radius"],u[".env-box-p"].color=u[".env-p"].color,u[".env-box-p"]["font-family"]=u[".env-p"]["font-family"],u[".env-box-p"]["font-size"]=u[".env-p"]["font-size"],u[".env-box-p"]["font-style"]=u[".env-p"]["font-style"],u[".env-box-p"]["font-weight"]=u[".env-p"]["font-weight"],u[".env-box-p"]["letter-spacing"]=u[".env-p"]["letter-spacing"],u[".env-box-p"]["text-decoration"]=u[".env-p"]["text-decoration"],u[".env-box-p"]["text-transform"]=u[".env-p"]["text-transform"],u[".env-box-p"]["line-height"]=u[".env-p"]["line-height"],u[".env-box-p"]["-webkit-font-smoothing"]=u[".env-p"]["-webkit-font-smoothing"],u[".env-box-p"]["-moz-osx-font-smoothing"]=u[".env-p"]["-moz-osx-font-smoothing"],u[".env-box-p"]["-webkit-backface-visibility"]=u[".env-p"]["-webkit-backface-visibility"],d(u[".env-box-p"].color,u[".env-box"]["background-color"])&amp;&amp;(u[".env-box-p"].color=u[".env-input"].color),u[".env-box-a"].color=u[".env-a"].color,u[".env-box-a"]["font-weight"]=u[".env-a"]["font-weight"],d(u[".env-box-a"].color,u[".env-box"]["background-color"])&amp;&amp;(u[".env-box-a"].color=u[".env-input"].color);<span class="cstat-no" title="statement not covered" >v</span>ar A=document.createElement("div");<span class="cstat-no" title="statement not covered" >A</span>.className="wsite-button form-wrapper",i.appendChild(A);<span class="cstat-no" title="statement not covered" >v</span>ar O=document.createElement("input");<span class="cstat-no" title="statement not covered" >O</span>.type="submit",O.className="btn btn-primary button wsite-button-inner wpcf7-submit sqs-editable-button elgg-button",O.setAttribute("style","display: none !important;"),A.appendChild(O),u[".env-btn"].color=m(O,"color","color"),u[".env-btn"]["background-color"]=m(O,"background-color","backgroundColor"),u[".env-btn"]["background-image"]=m(O,"background-image","backgroundImage"),u[".env-btn"]["background-repeat"]=m(O,"background-repeat","backgroundRepeat"),u[".env-btn"]["background-position"]=m(O,"background-position","backgroundPosition"),u[".env-btn"]["background-size"]=m(O,"background-size","backgroundSize"),u[".env-btn"]["font-family"]=m(O,"font-family","fontFamily"),u[".env-btn"]["font-size"]=m(O,"font-size","fontSize"),u[".env-btn"]["font-style"]=m(O,"font-style","fontSize"),u[".env-btn"]["font-weight"]=m(O,"font-weight","fontWeight"),u[".env-btn"]["letter-spacing"]=m(O,"letter-spacing","letterSpacing"),u[".env-btn"]["text-decoration"]=m(O,"text-decoration","textDecoration"),u[".env-btn"]["text-transform"]=m(O,"text-transform","textTransform"),u[".env-btn"]["border-top-width"]=m(O,"border-top-width","borderTopWidth"),u[".env-btn"]["border-top-style"]=m(O,"border-top-style","borderTopStyle"),u[".env-btn"]["border-top-color"]=m(O,"border-top-color","borderTopColor"),u[".env-btn"]["border-right-width"]=m(O,"border-right-width","borderRightWidth"),u[".env-btn"]["border-right-style"]=m(O,"border-right-style","borderRightStyle"),u[".env-btn"]["border-right-color"]=m(O,"border-right-color","borderRightColor"),u[".env-btn"]["border-bottom-width"]=m(O,"border-bottom-width","borderBottomWidth"),u[".env-btn"]["border-bottom-style"]=m(O,"border-bottom-style","borderBottomStyle"),u[".env-btn"]["border-bottom-color"]=m(O,"border-bottom-color","borderBottomColor"),u[".env-btn"]["border-left-width"]=m(O,"border-left-width","borderLeftWidth"),u[".env-btn"]["border-left-style"]=m(O,"border-left-style","borderLeftStyle"),u[".env-btn"]["border-left-color"]=m(O,"border-left-color","borderLeftColor"),u[".env-btn"]["border-top-left-radius"]=m(O,"border-top-left-radius","borderTopLeftRadius"),u[".env-btn"]["border-top-right-radius"]=m(O,"border-top-right-radius","borderTopRightRadius"),u[".env-btn"]["border-bottom-right-radius"]=m(O,"border-bottom-right-radius","borderBottomRightRadius"),u[".env-btn"]["border-bottom-left-radius"]=m(O,"border-bottom-left-radius","borderBottomLeftRadius"),u[".env-btn"]["box-shadow"]=m(O,"box-shadow","boxShadow"),u[".env-btn"]["-webkit-font-smoothing"]=m(O,"-webkit-font-smoothing","webkitFontSmoothing"),u[".env-btn"]["-moz-osx-font-smoothing"]=m(O,"-moz-osx-font-smoothing","mozOsxFontSmoothing"),u[".env-btn"]["-webkit-backface-visibility"]=m(O,"-webkit-backface-visibility","webkitBackfaceVisibility"),d(u[".env-btn"]["background-color"],u[".env-btn"].color)&amp;&amp;delete u[".env-btn"]["background-color"],i.removeChild(A);<span class="cstat-no" title="statement not covered" >v</span>ar E="";<span class="cstat-no" title="statement not covered" >f</span>or(var R in u)<span class="cstat-no" title="statement not covered" >u.hasOwnProperty(R)&amp;&amp;(E+=R+"{"+b(u[R])+"}");<span class="cstat-no" title="statement not covered" >v</span></span>ar T=document.createElement("iframe");<span class="cstat-no" title="statement not covered" >T</span>.src=l+"/widget.html?"+f,T.frameBorder=0,T.scrolling="no",T.tabIndex=0,T.width="100%",T.setAttribute("allowTransparency","true"),T.setAttribute("verticalscrolling","no"),T.setAttribute("horizontalscrolling","no"),T.setAttribute("style",b(s)),h(T,"load",<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>T.contentWindow.postMessage(JSON.stringify({type:"initialize",data:{accountId:r,referer:window.location.href,userAgent:window.navigator.userAgent}}),"*"),T.contentWindow.postMessage(JSON.stringify({type:"add:stylesheet",data:{css:E}}),"*"),T.contentWindow.postMessage(JSON.stringify({type:"set:width",data:{width:i.offsetWidth||i.clientWidth}}),"*"),y(T,u),h(document.head,"DOMNodeInserted",<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>"link"===t.target.tagName.toLowerCase()&amp;&amp;t.target.href&amp;&amp;g(T,t.target.href)}</span>)}</span>),i.appendChild(T),h(window,"message",<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>if(-1!==t.origin.indexOf(l)){<span class="cstat-no" title="statement not covered" >var e=JSON.parse(t.data);<span class="cstat-no" title="statement not covered" >"</span>set:height"===e.type&amp;&amp;v(T,s,e.data.height)}</span>}</span>),h(window,"resize",a(<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>T.contentWindow.postMessage(JSON.stringify({type:"set:width",data:{width:i.offsetWidth||i.clientWidth}}),"*")}</span>,100))}</span>}</span>;<span class="cstat-no" title="statement not covered" >n</span>(<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>var t=[];<span class="cstat-no" title="statement not covered" >i</span>f(document.querySelectorAll)<span class="cstat-no" title="statement not covered" >t=document.querySelectorAll('script[src*="'+l+'/embed.js"]');e</span>lse <span class="cstat-no" title="statement not covered" >for(var e=document.getElementsByTagName("script"),o=0,n=e.length;n&gt;o;o++)<span class="cstat-no" title="statement not covered" >e[o].src&amp;&amp;-1!==e[o].src.indexOf(l+"/embed.js")&amp;&amp;t.push(e[o]);<span class="cstat-no" title="statement not covered" >f</span></span></span>or(var r,o=0;r=t[o];o++)<span class="cstat-no" title="statement not covered" >w(r,o)}</span></span>)}</span>,43:<span class="fstat-no" title="function not covered" >function(t,e){</span>"use strict";<span class="cstat-no" title="statement not covered" >t.exports=<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="cstat-no" title="statement not covered" ></span>t.addEventListener?t.addEventListener(e,o,!1):t.attachEvent("on"+e,o)}</span>}</span>,45:<span class="fstat-no" title="function not covered" >function(t,e){<span class="fstat-no" title="function not covered" ></span>function o(t){<span class="cstat-no" title="statement not covered" ></span>return!!t&amp;&amp;"object"==typeof t}<span class="fstat-no" title="function not covered" ></span>function n(t,e){<span class="cstat-no" title="statement not covered" ></span>var o=null==t?void 0:t[e];<span class="cstat-no" title="statement not covered" >r</span>eturn a(o)?o:void 0}<span class="fstat-no" title="function not covered" ></span>function r(t){<span class="cstat-no" title="statement not covered" ></span>return i(t)&amp;&amp;u.call(t)==s}<span class="fstat-no" title="function not covered" ></span>function i(t){<span class="cstat-no" title="statement not covered" ></span>var e=typeof t;<span class="cstat-no" title="statement not covered" >r</span>eturn!!t&amp;&amp;("object"==e||"function"==e)}<span class="fstat-no" title="function not covered" ></span>function a(t){<span class="cstat-no" title="statement not covered" ></span>return null==t?!1:r(t)?p.test(l.call(t)):o(t)&amp;&amp;h.test(t)}<span class="cstat-no" title="statement not covered" ></span>var s="[object Function]",h=/^\[object .+?Constructor\]$/,c=Object.prototype,l=Function.prototype.toString,f=c.hasOwnProperty,u=c.toString,p=RegExp("^"+l.call(f).replace(/[\\^$.*+?()[\]{}|]/g,"\\$&amp;").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g,"$1.*?")+"$");<span class="cstat-no" title="statement not covered" >t</span>.exports=n}</span>,65:<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>t.exports=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return t.webpackPolyfill||(t.deprecate=<span class="fstat-no" title="function not covered" >function(){</span>},t.paths=[],t.children=[],t.webpackPolyfill=1),t}</span>}</span>,68:<span class="fstat-no" title="function not covered" >function(t,e){<span class="fstat-no" title="function not covered" ></span>function o(t){<span class="cstat-no" title="statement not covered" ></span>return r(n(t))}<span class="fstat-no" title="function not covered" ></span>function n(t){<span class="cstat-no" title="statement not covered" ></span>var e=t.R/255,o=t.G/255,n=t.B/255;<span class="cstat-no" title="statement not covered" >e</span>&gt;.04045?e=i((e+.055)/1.055,2.4):e/=12.92,o&gt;.04045?o=i((o+.055)/1.055,2.4):o/=12.92,n&gt;.04045?n=i((n+.055)/1.055,2.4):n/=12.92,e*=100,o*=100,n*=100;<span class="cstat-no" title="statement not covered" >v</span>ar r=.4124*e+.3576*o+.1805*n,a=.2126*e+.7152*o+.0722*n,s=.0193*e+.1192*o+.9505*n;<span class="cstat-no" title="statement not covered" >r</span>eturn{X:r,Y:a,Z:s}}<span class="fstat-no" title="function not covered" ></span>function r(t){<span class="cstat-no" title="statement not covered" ></span>var e=100,o=108.883,n=95.047,r=t.Y/e,a=t.Z/o,s=t.X/n;<span class="cstat-no" title="statement not covered" >s</span>=s&gt;.008856?i(s,1/3):7.787*s+16/116,r=r&gt;.008856?i(r,1/3):7.787*r+16/116,a=a&gt;.008856?i(a,1/3):7.787*a+16/116;<span class="cstat-no" title="statement not covered" >v</span>ar h=116*r-16,c=500*(s-r),l=200*(r-a);<span class="cstat-no" title="statement not covered" >r</span>eturn{L:h,a:c,b:l}}</span>/**</span>
+          	 * @author Markus Ekholm
+          	 * @copyright 2012-2015 (c) Markus Ekholm &lt;markus at botten dot org &gt;
+          	 * @license Copyright (c) 2012-2015, Markus Ekholm
+          	 * All rights reserved.
+          	 * Redistribution and use in source and binary forms, with or without
+          	 * modification, are permitted provided that the following conditions are met:
+          	 *    * Redistributions of source code must retain the above copyright
+          	 *      notice, this list of conditions and the following disclaimer.
+          	 *    * Redistributions in binary form must reproduce the above copyright
+          	 *      notice, this list of conditions and the following disclaimer in the
+          	 *      documentation and/or other materials provided with the distribution.
+          	 *    * Neither the name of the &lt;organization&gt; nor the
+          	 *      names of its contributors may be used to endorse or promote products
+          	 *      derived from this software without specific prior written permission.
+          	 *
+          	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+          	 * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+          	 * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+          	 * DISCLAIMED. IN NO EVENT SHALL MARKUS EKHOLM BE LIABLE FOR ANY
+          	 * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+          	 * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+          	 * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+          	 * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+          	 * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+          	 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+          	 */
+<span class="cstat-no" title="statement not covered" >          e.rgb_to_lab=o;<span class="cstat-no" title="statement not covered" >v</span>ar i=Math.pow;<span class="cstat-no" title="statement not covered" >M</span>ath.sqrt}</span>,69:<span class="fstat-no" title="function not covered" >function(t,e){<span class="fstat-no" title="function not covered" ></span>function o(t,e){<span class="cstat-no" title="statement not covered" ></span>var o=t.L,u=t.a,p=t.b,d=e.L,b=e.a,v=e.b,m=1,g=1,y=1,w=i(a(u,2)+a(p,2)),x=i(a(b,2)+a(v,2)),k=(w+x)/2,A=.5*(1-i(a(k,7)/(a(k,7)+a(25,7)))),C=(1+A)*u,z=(1+A)*b,S=i(a(C,2)+a(p,2)),O=i(a(z,2)+a(v,2)),E=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>if(0==t&amp;&amp;0==e)<span class="cstat-no" title="statement not covered" >return 0;<span class="cstat-no" title="statement not covered" >v</span></span>ar o=n(h(t,e));<span class="cstat-no" title="statement not covered" >r</span>eturn o&gt;=0?o:o+360}</span>,R=E(p,C),T=E(v,z),j=d-o,_=O-S,I=<span class="fstat-no" title="function not covered" >function(t,e,o,n){<span class="cstat-no" title="statement not covered" ></span>if(t*e==0)<span class="cstat-no" title="statement not covered" >return 0;<span class="cstat-no" title="statement not covered" >i</span></span>f(l(n-o)&lt;=180)<span class="cstat-no" title="statement not covered" >return n-o;<span class="cstat-no" title="statement not covered" >i</span></span>f(n-o&gt;180)<span class="cstat-no" title="statement not covered" >return n-o-360;<span class="cstat-no" title="statement not covered" >i</span></span>f(-180&gt;n-o)<span class="cstat-no" title="statement not covered" >return n-o+360;<span class="cstat-no" title="statement not covered" >t</span></span>hrow new Error}</span>,W=I(w,x,R,T),M=2*i(S*O)*c(r(W)/2),L=(o+d)/2,q=(S+O)/2,B=<span class="fstat-no" title="function not covered" >function(t,e,o,n){<span class="cstat-no" title="statement not covered" ></span>if(t*e==0)<span class="cstat-no" title="statement not covered" >return o+n;<span class="cstat-no" title="statement not covered" >i</span></span>f(l(o-n)&lt;=180)<span class="cstat-no" title="statement not covered" >return(o+n)/2;<span class="cstat-no" title="statement not covered" >i</span></span>f(l(o-n)&gt;180&amp;&amp;360&gt;o+n)<span class="cstat-no" title="statement not covered" >return(o+n+360)/2;<span class="cstat-no" title="statement not covered" >i</span></span>f(l(o-n)&gt;180&amp;&amp;o+n&gt;=360)<span class="cstat-no" title="statement not covered" >return(o+n-360)/2;<span class="cstat-no" title="statement not covered" >t</span></span>hrow new Error}</span>,N=B(w,x,R,T),F=1-.17*s(r(N-30))+.24*s(r(2*N))+.32*s(r(3*N+6))-.2*s(r(4*N-63)),P=30*f(-a((N-275)/25,2)),U=i(a(q,7)/(a(q,7)+a(25,7))),J=1+.015*a(L-50,2)/i(20+a(L-50,2)),V=1+.045*q,D=1+.015*q*F,$=-2*U*c(r(2*P)),G=i(a(j/(J*m),2)+a(_/(V*g),2)+a(M/(D*y),2)+$*(_/(V*g))*(M/(D*y)));<span class="cstat-no" title="statement not covered" >r</span>eturn G}<span class="fstat-no" title="function not covered" ></span>function n(t){<span class="cstat-no" title="statement not covered" ></span>return t*(180/u)}<span class="fstat-no" title="function not covered" ></span>function r(t){<span class="cstat-no" title="statement not covered" ></span>return t*(u/180)}</span>/**
+          	 * @author Markus Ekholm
+          	 * @copyright 2012-2015 (c) Markus Ekholm &lt;markus at botten dot org &gt;
+          	 * @license Copyright (c) 2012-2015, Markus Ekholm
+          	 * All rights reserved.
+          	 * Redistribution and use in source and binary forms, with or without
+          	 * modification, are permitted provided that the following conditions are met:
+          	 *    * Redistributions of source code must retain the above copyright
+          	 *      notice, this list of conditions and the following disclaimer.
+          	 *    * Redistributions in binary form must reproduce the above copyright
+          	 *      notice, this list of conditions and the following disclaimer in the
+          	 *      documentation and/or other materials provided with the distribution.
+          	 *    * Neither the name of the &lt;organization&gt; nor the
+          	 *      names of its contributors may be used to endorse or promote products
+          	 *      derived from this software without specific prior written permission.
+          	 *
+          	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+          	 * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+          	 * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+          	 * DISCLAIMED. IN NO EVENT SHALL MARKUS EKHOLM BE LIABLE FOR ANY
+          	 * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+          	 * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+          	 * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+          	 * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+          	 * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+          	 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+          	 */
+<span class="cstat-no" title="statement not covered" >          e.ciede2000=o;<span class="cstat-no" title="statement not covered" >v</span>ar i=Math.sqrt,a=Math.pow,s=Math.cos,h=Math.atan2,c=Math.sin,l=Math.abs,f=Math.exp,u=Math.PI}</span>,127:<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="cstat-no" title="statement not covered" ></span>var n="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";<span class="cstat-no" title="statement not covered" >!<span class="fstat-no" title="function not covered" ></span>function(t){</span>"use strict";<span class="fstat-no" title="function not covered" >function e(t){<span class="cstat-no" title="statement not covered" ></span>var e=t.charCodeAt(0);<span class="cstat-no" title="statement not covered" >r</span>eturn e===a||e===f?62:e===s||e===u?63:h&gt;e?-1:h+10&gt;e?e-h+26+26:l+26&gt;e?e-l:c+26&gt;e?e-c+26:void 0}<span class="fstat-no" title="function not covered" ></span>function o(t){<span class="fstat-no" title="function not covered" ></span>function o(t){<span class="cstat-no" title="statement not covered" ></span>c[f++]=t}<span class="cstat-no" title="statement not covered" ></span>var n,r,a,s,h,c;<span class="cstat-no" title="statement not covered" >i</span>f(t.length%4&gt;0)<span class="cstat-no" title="statement not covered" >throw new Error("Invalid string. Length must be a multiple of 4");<span class="cstat-no" title="statement not covered" >v</span></span>ar l=t.length;<span class="cstat-no" title="statement not covered" >h</span>="="===t.charAt(l-2)?2:"="===t.charAt(l-1)?1:0,c=new i(3*t.length/4-h),a=h&gt;0?t.length-4:t.length;<span class="cstat-no" title="statement not covered" >v</span>ar f=0;<span class="cstat-no" title="statement not covered" >f</span>or(n=0,r=0;a&gt;n;n+=4,r+=3)<span class="cstat-no" title="statement not covered" >s=e(t.charAt(n))&lt;&lt;18|e(t.charAt(n+1))&lt;&lt;12|e(t.charAt(n+2))&lt;&lt;6|e(t.charAt(n+3)),o((16711680&amp;s)&gt;&gt;16),o((65280&amp;s)&gt;&gt;8),o(255&amp;s);<span class="cstat-no" title="statement not covered" >r</span></span>eturn 2===h?(s=e(t.charAt(n))&lt;&lt;2|e(t.charAt(n+1))&gt;&gt;4,o(255&amp;s)):1===h&amp;&amp;(s=e(t.charAt(n))&lt;&lt;10|e(t.charAt(n+1))&lt;&lt;4|e(t.charAt(n+2))&gt;&gt;2,o(s&gt;&gt;8&amp;255),o(255&amp;s)),c}<span class="fstat-no" title="function not covered" ></span>function r(t){<span class="fstat-no" title="function not covered" ></span>function e(t){<span class="cstat-no" title="statement not covered" ></span>return n.charAt(t)}<span class="fstat-no" title="function not covered" ></span>function o(t){<span class="cstat-no" title="statement not covered" ></span>return e(t&gt;&gt;18&amp;63)+e(t&gt;&gt;12&amp;63)+e(t&gt;&gt;6&amp;63)+e(63&amp;t)}<span class="cstat-no" title="statement not covered" ></span>var r,i,a,s=t.length%3,h="";<span class="cstat-no" title="statement not covered" >f</span>or(r=0,a=t.length-s;a&gt;r;r+=3)<span class="cstat-no" title="statement not covered" >i=(t[r]&lt;&lt;16)+(t[r+1]&lt;&lt;8)+t[r+2],h+=o(i);<span class="cstat-no" title="statement not covered" >s</span></span>witch(s){case 1:<span class="cstat-no" title="statement not covered" >i=t[t.length-1],h+=e(i&gt;&gt;2),h+=e(i&lt;&lt;4&amp;63),h+="==";<span class="cstat-no" title="statement not covered" >b</span>reak;c</span>ase 2:<span class="cstat-no" title="statement not covered" >i=(t[t.length-2]&lt;&lt;8)+t[t.length-1],h+=e(i&gt;&gt;10),h+=e(i&gt;&gt;4&amp;63),h+=e(i&lt;&lt;2&amp;63),h+="="}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn h}<span class="cstat-no" title="statement not covered" ></span>var i="undefined"!=typeof Uint8Array?Uint8Array:Array,a="+".charCodeAt(0),s="/".charCodeAt(0),h="0".charCodeAt(0),c="a".charCodeAt(0),l="A".charCodeAt(0),f="-".charCodeAt(0),u="_".charCodeAt(0);<span class="cstat-no" title="statement not covered" >t</span>.toByteArray=o,t.fromByteArray=r}</span>(e)}</span>,128:<span class="fstat-no" title="function not covered" >function(t,e,o){</span>"use strict";<span class="cstat-no" title="statement not covered" >var n=o(69),r=o(68),i=o(129),a=t.exports={};<span class="cstat-no" title="statement not covered" >a</span>.diff=n.ciede2000,a.rgb_to_lab=r.rgb_to_lab,a.map_palette=i.map_palette,a.palette_map_key=i.palette_map_key,a.closest=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>var o=a.palette_map_key(t),n=a.map_palette([t],e,"closest");<span class="cstat-no" title="statement not covered" >r</span>eturn n[o]}</span>,a.furthest=<span class="fstat-no" title="function not covered" >function(t,e){<span class="cstat-no" title="statement not covered" ></span>var o=a.palette_map_key(t),n=a.map_palette([t],e,"furthest");<span class="cstat-no" title="statement not covered" >r</span>eturn n[o]}</span>}</span>,129:<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="fstat-no" title="function not covered" ></span>function n(t){<span class="cstat-no" title="statement not covered" ></span>return"R"+t.R+"B"+t.B+"G"+t.G}<span class="fstat-no" title="function not covered" ></span>function r(t,e,o){<span class="cstat-no" title="statement not covered" ></span>var r={};<span class="cstat-no" title="statement not covered" >o</span>=o||"closest";<span class="cstat-no" title="statement not covered" >f</span>or(var a=0;a&lt;t.length;a+=1){<span class="cstat-no" title="statement not covered" >for(var s=t[a],h=void 0,c=void 0,l=0;l&lt;e.length;l+=1){<span class="cstat-no" title="statement not covered" >var f=e[l],u=i(s,f);<span class="cstat-no" title="statement not covered" >v</span>oid 0==h||"closest"===o&amp;&amp;c&gt;u?(h=f,c=u):"furthest"===o&amp;&amp;u&gt;c&amp;&amp;(h=f,c=u)}<span class="cstat-no" title="statement not covered" ></span>r</span>[n(s)]=h}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn r}<span class="fstat-no" title="function not covered" ></span>function i(t,e){<span class="cstat-no" title="statement not covered" ></span>return t=s.rgb_to_lab(t),e=s.rgb_to_lab(e),a.ciede2000(t,e)}</span>/**
+          	 * @author Markus Ekholm
+          	 * @copyright 2012-2015 (c) Markus Ekholm &lt;markus at botten dot org &gt;
+          	 * @license Copyright (c) 2012-2015, Markus Ekholm
+          	 * All rights reserved.
+          	 * Redistribution and use in source and binary forms, with or without
+          	 * modification, are permitted provided that the following conditions are met:
+          	 *    * Redistributions of source code must retain the above copyright
+          	 *      notice, this list of conditions and the following disclaimer.
+          	 *    * Redistributions in binary form must reproduce the above copyright
+          	 *      notice, this list of conditions and the following disclaimer in the
+          	 *      documentation and/or other materials provided with the distribution.
+          	 *    * Neither the name of the &lt;organization&gt; nor the
+          	 *      names of its contributors may be used to endorse or promote products
+          	 *      derived from this software without specific prior written permission.
+          	 *
+          	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+          	 * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+          	 * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+          	 * DISCLAIMED. IN NO EVENT SHALL MARKUS EKHOLM BE LIABLE FOR ANY
+          	 * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+          	 * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+          	 * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+          	 * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+          	 * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+          	 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+          	 */
+<span class="cstat-no" title="statement not covered" >          e.map_palette=r,e.palette_map_key=n;<span class="cstat-no" title="statement not covered" >v</span>ar a=o(69),s=o(68)}</span>,130:<span class="fstat-no" title="function not covered" >function(t,e,o){</span>/*!
+          	  * domready (c) Dustin Diaz 2014 - License MIT
+          	  */
+<span class="cstat-no" title="statement not covered" >          !<span class="fstat-no" title="function not covered" >function(e,o){<span class="cstat-no" title="statement not covered" ></span>t.exports=o()}</span>("domready",<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>var t,e=[],o=document,n=o.documentElement.doScroll,r="DOMContentLoaded",i=(n?/^loaded|^c/:/^loaded|^i|^c/).test(o.readyState);<span class="cstat-no" title="statement not covered" >r</span>eturn i||o.addEventListener(r,t=<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>for(o.removeEventListener(r,t),i=1;t=e.shift();)<span class="cstat-no" title="statement not covered" >t()}</span></span>),<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>i?setTimeout(t,0):e.push(t)}</span>}</span>)}</span>,160:<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="fstat-no" title="function not covered" ></span>function n(t,e,o){<span class="fstat-no" title="function not covered" ></span>function n(){<span class="cstat-no" title="statement not covered" ></span>m&amp;&amp;clearTimeout(m),p&amp;&amp;clearTimeout(p),y=0,p=m=g=void 0}<span class="fstat-no" title="function not covered" ></span>function i(e,o){<span class="cstat-no" title="statement not covered" ></span>o&amp;&amp;clearTimeout(o),p=m=g=void 0,e&amp;&amp;(y=c(),d=t.apply(v,u),m||p||(u=v=void 0))}<span class="fstat-no" title="function not covered" ></span>function h(){<span class="cstat-no" title="statement not covered" ></span>var t=e-(c()-b);<span class="cstat-no" title="statement not covered" >0</span>&gt;=t||t&gt;e?i(g,p):m=setTimeout(h,t)}<span class="fstat-no" title="function not covered" ></span>function l(){<span class="cstat-no" title="statement not covered" ></span>i(x,m)}<span class="fstat-no" title="function not covered" ></span>function f(){<span class="cstat-no" title="statement not covered" ></span>if(u=arguments,b=c(),v=this,g=x&amp;&amp;(m||!k),w===!1)<span class="cstat-no" title="statement not covered" >var o=k&amp;&amp;!m;e</span>lse{<span class="cstat-no" title="statement not covered" >p||k||(y=b);<span class="cstat-no" title="statement not covered" >v</span>ar n=w-(b-y),r=0&gt;=n||n&gt;w;<span class="cstat-no" title="statement not covered" >r</span>?(p&amp;&amp;(p=clearTimeout(p)),y=b,d=t.apply(v,u)):p||(p=setTimeout(l,n))}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn r&amp;&amp;m?m=clearTimeout(m):m||e===w||(m=setTimeout(h,e)),o&amp;&amp;(r=!0,d=t.apply(v,u)),!r||m||p||(u=v=void 0),d}<span class="cstat-no" title="statement not covered" ></span>var u,p,d,b,v,m,g,y=0,w=!1,x=!0;<span class="cstat-no" title="statement not covered" >i</span>f("function"!=typeof t)<span class="cstat-no" title="statement not covered" >throw new TypeError(a);<span class="cstat-no" title="statement not covered" >i</span></span>f(e=0&gt;e?0:+e||0,o===!0){<span class="cstat-no" title="statement not covered" >var k=!0;<span class="cstat-no" title="statement not covered" >x</span>=!1}</span>else <span class="cstat-no" title="statement not covered" >r(o)&amp;&amp;(k=!!o.leading,w="maxWait"in o&amp;&amp;s(+o.maxWait||0,e),x="trailing"in o?!!o.trailing:x);<span class="cstat-no" title="statement not covered" >r</span></span>eturn f.cancel=n,f}<span class="fstat-no" title="function not covered" ></span>function r(t){<span class="cstat-no" title="statement not covered" ></span>var e=typeof t;<span class="cstat-no" title="statement not covered" >r</span>eturn!!t&amp;&amp;("object"==e||"function"==e)}<span class="cstat-no" title="statement not covered" ></span>var i=o(45),a="Expected a function",s=Math.max,h=i(Date,"now"),c=h||<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return(new Date).getTime()}</span>;<span class="cstat-no" title="statement not covered" >t</span>.exports=n}</span>,168:<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="cstat-no" title="statement not covered" ></span>var n;<span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" ></span>function(t,r){<span class="cstat-no" title="statement not covered" ></span>!<span class="fstat-no" title="function not covered" >function(i){<span class="fstat-no" title="function not covered" ></span>function a(t){<span class="cstat-no" title="statement not covered" ></span>throw RangeError(_[t])}<span class="fstat-no" title="function not covered" ></span>function s(t,e){<span class="cstat-no" title="statement not covered" ></span>for(var o=t.length,n=[];o--;)<span class="cstat-no" title="statement not covered" >n[o]=e(t[o]);<span class="cstat-no" title="statement not covered" >r</span></span>eturn n}<span class="fstat-no" title="function not covered" ></span>function h(t,e){<span class="cstat-no" title="statement not covered" ></span>var o=t.split("@"),n="";<span class="cstat-no" title="statement not covered" >o</span>.length&gt;1&amp;&amp;(n=o[0]+"@",t=o[1]),t=t.replace(j,".");<span class="cstat-no" title="statement not covered" >v</span>ar r=t.split("."),i=s(r,e).join(".");<span class="cstat-no" title="statement not covered" >r</span>eturn n+i}<span class="fstat-no" title="function not covered" ></span>function c(t){<span class="cstat-no" title="statement not covered" ></span>for(var e,o,n=[],r=0,i=t.length;i&gt;r;)<span class="cstat-no" title="statement not covered" >e=t.charCodeAt(r++),e&gt;=55296&amp;&amp;56319&gt;=e&amp;&amp;i&gt;r?(o=t.charCodeAt(r++),56320==(64512&amp;o)?n.push(((1023&amp;e)&lt;&lt;10)+(1023&amp;o)+65536):(n.push(e),r--)):n.push(e);<span class="cstat-no" title="statement not covered" >r</span></span>eturn n}<span class="fstat-no" title="function not covered" ></span>function l(t){<span class="cstat-no" title="statement not covered" ></span>return s(t,<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>var e="";<span class="cstat-no" title="statement not covered" >r</span>eturn t&gt;65535&amp;&amp;(t-=65536,e+=M(t&gt;&gt;&gt;10&amp;1023|55296),t=56320|1023&amp;t),e+=M(t)}</span>).join("")}<span class="fstat-no" title="function not covered" ></span>function f(t){<span class="cstat-no" title="statement not covered" ></span>return 10&gt;t-48?t-22:26&gt;t-65?t-65:26&gt;t-97?t-97:x}<span class="fstat-no" title="function not covered" ></span>function u(t,e){<span class="cstat-no" title="statement not covered" ></span>return t+22+75*(26&gt;t)-((0!=e)&lt;&lt;5)}<span class="fstat-no" title="function not covered" ></span>function p(t,e,o){<span class="cstat-no" title="statement not covered" ></span>var n=0;<span class="cstat-no" title="statement not covered" >f</span>or(t=o?W(t/z):t&gt;&gt;1,t+=W(t/e);t&gt;I*A&gt;&gt;1;n+=x)<span class="cstat-no" title="statement not covered" >t=W(t/I);<span class="cstat-no" title="statement not covered" >r</span></span>eturn W(n+(I+1)*t/(t+C))}<span class="fstat-no" title="function not covered" ></span>function d(t){<span class="cstat-no" title="statement not covered" ></span>var e,o,n,r,i,s,h,c,u,d,b=[],v=t.length,m=0,g=O,y=S;<span class="cstat-no" title="statement not covered" >f</span>or(o=t.lastIndexOf(E),0&gt;o&amp;&amp;(o=0),n=0;o&gt;n;++n)<span class="cstat-no" title="statement not covered" >t.charCodeAt(n)&gt;=128&amp;&amp;a("not-basic"),b.push(t.charCodeAt(n));<span class="cstat-no" title="statement not covered" >f</span></span>or(r=o&gt;0?o+1:0;v&gt;r;){<span class="cstat-no" title="statement not covered" >for(i=m,s=1,h=x;r&gt;=v&amp;&amp;a("invalid-input"),c=f(t.charCodeAt(r++)),(c&gt;=x||c&gt;W((w-m)/s))&amp;&amp;a("overflow"),m+=c*s,u=y&gt;=h?k:h&gt;=y+A?A:h-y,!(u&gt;c);h+=x)<span class="cstat-no" title="statement not covered" >d=x-u,s&gt;W(w/d)&amp;&amp;a("overflow"),s*=d;<span class="cstat-no" title="statement not covered" >e</span></span>=b.length+1,y=p(m-i,e,0==i),W(m/e)&gt;w-g&amp;&amp;a("overflow"),g+=W(m/e),m%=e,b.splice(m++,0,g)}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn l(b)}<span class="fstat-no" title="function not covered" ></span>function b(t){<span class="cstat-no" title="statement not covered" ></span>var e,o,n,r,i,s,h,l,f,d,b,v,m,g,y,C=[];<span class="cstat-no" title="statement not covered" >f</span>or(t=c(t),v=t.length,e=O,o=0,i=S,s=0;v&gt;s;++s)<span class="cstat-no" title="statement not covered" >b=t[s],128&gt;b&amp;&amp;C.push(M(b));<span class="cstat-no" title="statement not covered" >f</span></span>or(n=r=C.length,r&amp;&amp;C.push(E);v&gt;n;){<span class="cstat-no" title="statement not covered" >for(h=w,s=0;v&gt;s;++s)<span class="cstat-no" title="statement not covered" >b=t[s],b&gt;=e&amp;&amp;h&gt;b&amp;&amp;(h=b);<span class="cstat-no" title="statement not covered" >f</span></span>or(m=n+1,h-e&gt;W((w-o)/m)&amp;&amp;a("overflow"),o+=(h-e)*m,e=h,s=0;v&gt;s;++s)<span class="cstat-no" title="statement not covered" >if(b=t[s],e&gt;b&amp;&amp;++o&gt;w&amp;&amp;a("overflow"),b==e){<span class="cstat-no" title="statement not covered" >for(l=o,f=x;d=i&gt;=f?k:f&gt;=i+A?A:f-i,!(d&gt;l);f+=x)<span class="cstat-no" title="statement not covered" >y=l-d,g=x-d,C.push(M(u(d+y%g,0))),l=W(y/g);<span class="cstat-no" title="statement not covered" >C</span></span>.push(M(u(l,0))),i=p(o,m,n==r),o=0,++n}<span class="cstat-no" title="statement not covered" ></span>+</span></span>+o,++e}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn C.join("")}<span class="fstat-no" title="function not covered" ></span>function v(t){<span class="cstat-no" title="statement not covered" ></span>return h(t,<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return R.test(t)?d(t.slice(4).toLowerCase()):t}</span>)}<span class="fstat-no" title="function not covered" ></span>function m(t){<span class="cstat-no" title="statement not covered" ></span>return h(t,<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return T.test(t)?"xn--"+b(t):t}</span>)}<span class="cstat-no" title="statement not covered" ></span>var g=("object"==typeof e&amp;&amp;e&amp;&amp;!e.nodeType&amp;&amp;e,"object"==typeof t&amp;&amp;t&amp;&amp;!t.nodeType&amp;&amp;t,"object"==typeof r&amp;&amp;r);<span class="cstat-no" title="statement not covered" >(</span>g.global===g||g.window===g||g.self===g)&amp;&amp;(i=g);<span class="cstat-no" title="statement not covered" >v</span>ar y,w=2147483647,x=36,k=1,A=26,C=38,z=700,S=72,O=128,E="-",R=/^xn--/,T=/[^\x20-\x7E]/,j=/[\x2E\u3002\uFF0E\uFF61]/g,_={overflow:"Overflow: input needs wider integers to process","not-basic":"Illegal input &gt;= 0x80 (not a basic code point)","invalid-input":"Invalid input"},I=x-k,W=Math.floor,M=String.fromCharCode;<span class="cstat-no" title="statement not covered" >y</span>={version:"1.3.2",ucs2:{decode:c,encode:l},decode:d,encode:b,toASCII:m,toUnicode:v},n=<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return y}</span>.call(e,o,e,t),!(void 0!==n&amp;&amp;(t.exports=n))}</span>(this)}</span>).call(e,o(65)(t),<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return this}</span>())}</span>,169:<span class="fstat-no" title="function not covered" >function(t,e){</span>"use strict";<span class="fstat-no" title="function not covered" >function o(t,e){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(t,e)}<span class="cstat-no" title="statement not covered" ></span>t.exports=<span class="fstat-no" title="function not covered" >function(t,e,n,r){<span class="cstat-no" title="statement not covered" ></span>e=e||"&amp;",n=n||"=";<span class="cstat-no" title="statement not covered" >v</span>ar i={};<span class="cstat-no" title="statement not covered" >i</span>f("string"!=typeof t||0===t.length)<span class="cstat-no" title="statement not covered" >return i;<span class="cstat-no" title="statement not covered" >v</span></span>ar a=/\+/g;<span class="cstat-no" title="statement not covered" >t</span>=t.split(e);<span class="cstat-no" title="statement not covered" >v</span>ar s=1e3;<span class="cstat-no" title="statement not covered" >r</span>&amp;&amp;"number"==typeof r.maxKeys&amp;&amp;(s=r.maxKeys);<span class="cstat-no" title="statement not covered" >v</span>ar h=t.length;<span class="cstat-no" title="statement not covered" >s</span>&gt;0&amp;&amp;h&gt;s&amp;&amp;(h=s);<span class="cstat-no" title="statement not covered" >f</span>or(var c=0;h&gt;c;++c){<span class="cstat-no" title="statement not covered" >var l,f,u,p,d=t[c].replace(a,"%20"),b=d.indexOf(n);<span class="cstat-no" title="statement not covered" >b</span>&gt;=0?(l=d.substr(0,b),f=d.substr(b+1)):(l=d,f=""),u=decodeURIComponent(l),p=decodeURIComponent(f),o(i,u)?Array.isArray(i[u])?i[u].push(p):i[u]=[i[u],p]:i[u]=p}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn i}</span>}</span>,170:<span class="fstat-no" title="function not covered" >function(t,e){</span>"use strict";<span class="cstat-no" title="statement not covered" >var o=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>switch(typeof t){case"string":<span class="cstat-no" title="statement not covered" >return t;c</span>ase"boolean":<span class="cstat-no" title="statement not covered" >return t?"true":"false";c</span>ase"number":<span class="cstat-no" title="statement not covered" >return isFinite(t)?t:"";d</span>efault:<span class="cstat-no" title="statement not covered" >return""}</span>}</span>;<span class="cstat-no" title="statement not covered" >t</span>.exports=<span class="fstat-no" title="function not covered" >function(t,e,n,r){<span class="cstat-no" title="statement not covered" ></span>return e=e||"&amp;",n=n||"=",null===t&amp;&amp;(t=void 0),"object"==typeof t?Object.keys(t).map(<span class="fstat-no" title="function not covered" >function(r){<span class="cstat-no" title="statement not covered" ></span>var i=encodeURIComponent(o(r))+n;<span class="cstat-no" title="statement not covered" >r</span>eturn Array.isArray(t[r])?t[r].map(<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return i+encodeURIComponent(o(t))}</span>).join(e):i+encodeURIComponent(o(t[r]))}</span>).join(e):r?encodeURIComponent(o(r))+n+encodeURIComponent(o(t)):""}</span>}</span>,171:<span class="fstat-no" title="function not covered" >function(t,e,o){</span>"use strict";<span class="cstat-no" title="statement not covered" >e.decode=e.parse=o(169),e.encode=e.stringify=o(170)}</span>,228:<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="fstat-no" title="function not covered" ></span>function n(){<span class="cstat-no" title="statement not covered" ></span>this.protocol=null,this.slashes=null,this.auth=null,this.host=null,this.port=null,this.hostname=null,this.hash=null,this.search=null,this.query=null,this.pathname=null,this.path=null,this.href=null}<span class="fstat-no" title="function not covered" ></span>function r(t,e,o){<span class="cstat-no" title="statement not covered" ></span>if(t&amp;&amp;c(t)&amp;&amp;t instanceof n)<span class="cstat-no" title="statement not covered" >return t;<span class="cstat-no" title="statement not covered" >v</span></span>ar r=new n;<span class="cstat-no" title="statement not covered" >r</span>eturn r.parse(t,e,o),r}<span class="fstat-no" title="function not covered" ></span>function i(t){<span class="cstat-no" title="statement not covered" ></span>return h(t)&amp;&amp;(t=r(t)),t instanceof n?t.format():n.prototype.format.call(t)}<span class="fstat-no" title="function not covered" ></span>function a(t,e){<span class="cstat-no" title="statement not covered" ></span>return r(t,!1,!0).resolve(e)}<span class="fstat-no" title="function not covered" ></span>function s(t,e){<span class="cstat-no" title="statement not covered" ></span>return t?r(t,!1,!0).resolveObject(e):e}<span class="fstat-no" title="function not covered" ></span>function h(t){<span class="cstat-no" title="statement not covered" ></span>return"string"==typeof t}<span class="fstat-no" title="function not covered" ></span>function c(t){<span class="cstat-no" title="statement not covered" ></span>return"object"==typeof t&amp;&amp;null!==t}<span class="fstat-no" title="function not covered" ></span>function l(t){<span class="cstat-no" title="statement not covered" ></span>return null===t}<span class="fstat-no" title="function not covered" ></span>function f(t){<span class="cstat-no" title="statement not covered" ></span>return null==t}<span class="cstat-no" title="statement not covered" ></span>var u=o(168);<span class="cstat-no" title="statement not covered" >e</span>.parse=r,e.resolve=a,e.resolveObject=s,e.format=i,e.Url=n;<span class="cstat-no" title="statement not covered" >v</span>ar p=/^([a-z0-9.+-]+:)/i,d=/:[0-9]*$/,b=["&lt;","&gt;",'"',"`"," ","\r","\n","	"],v=["{","}","|","\\","^","`"].concat(b),m=["'"].concat(v),g=["%","/","?",";","#"].concat(m),y=["/","?","#"],w=255,x=/^[a-z0-9A-Z_-]{0,63}$/,k=/^([a-z0-9A-Z_-]{0,63})(.*)$/,A={javascript:!0,"javascript:":!0},C={javascript:!0,"javascript:":!0},z={http:!0,https:!0,ftp:!0,gopher:!0,file:!0,"http:":!0,"https:":!0,"ftp:":!0,"gopher:":!0,"file:":!0},S=o(171);<span class="cstat-no" title="statement not covered" >n</span>.prototype.parse=<span class="fstat-no" title="function not covered" >function(t,e,o){<span class="cstat-no" title="statement not covered" ></span>if(!h(t))<span class="cstat-no" title="statement not covered" >throw new TypeError("Parameter 'url' must be a string, not "+typeof t);<span class="cstat-no" title="statement not covered" >v</span></span>ar n=t;<span class="cstat-no" title="statement not covered" >n</span>=n.trim();<span class="cstat-no" title="statement not covered" >v</span>ar r=p.exec(n);<span class="cstat-no" title="statement not covered" >i</span>f(r){<span class="cstat-no" title="statement not covered" >r=r[0];<span class="cstat-no" title="statement not covered" >v</span>ar i=r.toLowerCase();<span class="cstat-no" title="statement not covered" >t</span>his.protocol=i,n=n.substr(r.length)}<span class="cstat-no" title="statement not covered" ></span>i</span>f(o||r||n.match(/^\/\/[^@\/]+@[^@\/]+/)){<span class="cstat-no" title="statement not covered" >var a="//"===n.substr(0,2);<span class="cstat-no" title="statement not covered" >!</span>a||r&amp;&amp;C[r]||(n=n.substr(2),this.slashes=!0)}<span class="cstat-no" title="statement not covered" ></span>i</span>f(!C[r]&amp;&amp;(a||r&amp;&amp;!z[r])){<span class="cstat-no" title="statement not covered" >for(var s=-1,c=0;c&lt;y.length;c++){<span class="cstat-no" title="statement not covered" >var l=n.indexOf(y[c]);<span class="cstat-no" title="statement not covered" >-</span>1!==l&amp;&amp;(-1===s||s&gt;l)&amp;&amp;(s=l)}<span class="cstat-no" title="statement not covered" ></span>v</span>ar f,d;<span class="cstat-no" title="statement not covered" >d</span>=-1===s?n.lastIndexOf("@"):n.lastIndexOf("@",s),-1!==d&amp;&amp;(f=n.slice(0,d),n=n.slice(d+1),this.auth=decodeURIComponent(f)),s=-1;<span class="cstat-no" title="statement not covered" >f</span>or(var c=0;c&lt;g.length;c++){<span class="cstat-no" title="statement not covered" >var l=n.indexOf(g[c]);<span class="cstat-no" title="statement not covered" >-</span>1!==l&amp;&amp;(-1===s||s&gt;l)&amp;&amp;(s=l)}<span class="cstat-no" title="statement not covered" ></span>-</span>1===s&amp;&amp;(s=n.length),this.host=n.slice(0,s),n=n.slice(s),this.parseHost(),this.hostname=this.hostname||"";<span class="cstat-no" title="statement not covered" >v</span>ar b="["===this.hostname[0]&amp;&amp;"]"===this.hostname[this.hostname.length-1];<span class="cstat-no" title="statement not covered" >i</span>f(!b)<span class="cstat-no" title="statement not covered" >for(var v=this.hostname.split(/\./),c=0,O=v.length;O&gt;c;c++){<span class="cstat-no" title="statement not covered" >var E=v[c];<span class="cstat-no" title="statement not covered" >i</span>f(E&amp;&amp;!E.match(x)){<span class="cstat-no" title="statement not covered" >for(var R="",T=0,j=E.length;j&gt;T;T++)<span class="cstat-no" title="statement not covered" >R+=E.charCodeAt(T)&gt;127?"x":E[T];<span class="cstat-no" title="statement not covered" >i</span></span>f(!R.match(x)){<span class="cstat-no" title="statement not covered" >var _=v.slice(0,c),I=v.slice(c+1),W=E.match(k);<span class="cstat-no" title="statement not covered" >W</span>&amp;&amp;(_.push(W[1]),I.unshift(W[2])),I.length&amp;&amp;(n="/"+I.join(".")+n),this.hostname=_.join(".");<span class="cstat-no" title="statement not covered" >b</span>reak}</span>}</span>}<span class="cstat-no" title="statement not covered" ></span>i</span></span>f(this.hostname.length&gt;w?this.hostname="":this.hostname=this.hostname.toLowerCase(),!b){<span class="cstat-no" title="statement not covered" >for(var M=this.hostname.split("."),L=[],c=0;c&lt;M.length;++c){<span class="cstat-no" title="statement not covered" >var q=M[c];<span class="cstat-no" title="statement not covered" >L</span>.push(q.match(/[^A-Za-z0-9_-]/)?"xn--"+u.encode(q):q)}<span class="cstat-no" title="statement not covered" ></span>t</span>his.hostname=L.join(".")}<span class="cstat-no" title="statement not covered" ></span>v</span>ar B=this.port?":"+this.port:"",N=this.hostname||"";<span class="cstat-no" title="statement not covered" >t</span>his.host=N+B,this.href+=this.host,b&amp;&amp;(this.hostname=this.hostname.substr(1,this.hostname.length-2),"/"!==n[0]&amp;&amp;(n="/"+n))}<span class="cstat-no" title="statement not covered" ></span>i</span>f(!A[i])<span class="cstat-no" title="statement not covered" >for(var c=0,O=m.length;O&gt;c;c++){<span class="cstat-no" title="statement not covered" >var F=m[c],P=encodeURIComponent(F);<span class="cstat-no" title="statement not covered" >P</span>===F&amp;&amp;(P=escape(F)),n=n.split(F).join(P)}<span class="cstat-no" title="statement not covered" ></span>v</span></span>ar U=n.indexOf("#");<span class="cstat-no" title="statement not covered" >-</span>1!==U&amp;&amp;(this.hash=n.substr(U),n=n.slice(0,U));<span class="cstat-no" title="statement not covered" >v</span>ar J=n.indexOf("?");<span class="cstat-no" title="statement not covered" >i</span>f(-1!==J?(this.search=n.substr(J),this.query=n.substr(J+1),e&amp;&amp;(this.query=S.parse(this.query)),n=n.slice(0,J)):e&amp;&amp;(this.search="",this.query={}),n&amp;&amp;(this.pathname=n),z[i]&amp;&amp;this.hostname&amp;&amp;!this.pathname&amp;&amp;(this.pathname="/"),this.pathname||this.search){<span class="cstat-no" title="statement not covered" >var B=this.pathname||"",q=this.search||"";<span class="cstat-no" title="statement not covered" >t</span>his.path=B+q}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn this.href=this.format(),this}</span>,n.prototype.format=<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>var t=this.auth||"";<span class="cstat-no" title="statement not covered" >t</span>&amp;&amp;(t=encodeURIComponent(t),t=t.replace(/%3A/i,":"),t+="@");<span class="cstat-no" title="statement not covered" >v</span>ar e=this.protocol||"",o=this.pathname||"",n=this.hash||"",r=!1,i="";<span class="cstat-no" title="statement not covered" >t</span>his.host?r=t+this.host:this.hostname&amp;&amp;(r=t+(-1===this.hostname.indexOf(":")?this.hostname:"["+this.hostname+"]"),this.port&amp;&amp;(r+=":"+this.port)),this.query&amp;&amp;c(this.query)&amp;&amp;Object.keys(this.query).length&amp;&amp;(i=S.stringify(this.query));<span class="cstat-no" title="statement not covered" >v</span>ar a=this.search||i&amp;&amp;"?"+i||"";<span class="cstat-no" title="statement not covered" >r</span>eturn e&amp;&amp;":"!==e.substr(-1)&amp;&amp;(e+=":"),this.slashes||(!e||z[e])&amp;&amp;r!==!1?(r="//"+(r||""),o&amp;&amp;"/"!==o.charAt(0)&amp;&amp;(o="/"+o)):r||(r=""),n&amp;&amp;"#"!==n.charAt(0)&amp;&amp;(n="#"+n),a&amp;&amp;"?"!==a.charAt(0)&amp;&amp;(a="?"+a),o=o.replace(/[?#]/g,<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return encodeURIComponent(t)}</span>),a=a.replace("#","%23"),e+r+o+a+n}</span>,n.prototype.resolve=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return this.resolveObject(r(t,!1,!0)).format()}</span>,n.prototype.resolveObject=<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>if(h(t)){<span class="cstat-no" title="statement not covered" >var e=new n;<span class="cstat-no" title="statement not covered" >e</span>.parse(t,!1,!0),t=e}<span class="cstat-no" title="statement not covered" ></span>v</span>ar o=new n;<span class="cstat-no" title="statement not covered" >i</span>f(Object.keys(this).forEach(<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>o[t]=this[t]}</span>,this),o.hash=t.hash,""===t.href)<span class="cstat-no" title="statement not covered" >return o.href=o.format(),o;<span class="cstat-no" title="statement not covered" >i</span></span>f(t.slashes&amp;&amp;!t.protocol)<span class="cstat-no" title="statement not covered" >return Object.keys(t).forEach(<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>"protocol"!==e&amp;&amp;(o[e]=t[e])}</span>),z[o.protocol]&amp;&amp;o.hostname&amp;&amp;!o.pathname&amp;&amp;(o.path=o.pathname="/"),o.href=o.format(),o;<span class="cstat-no" title="statement not covered" >i</span></span>f(t.protocol&amp;&amp;t.protocol!==o.protocol){<span class="cstat-no" title="statement not covered" >if(!z[t.protocol])<span class="cstat-no" title="statement not covered" >return Object.keys(t).forEach(<span class="fstat-no" title="function not covered" >function(e){<span class="cstat-no" title="statement not covered" ></span>o[e]=t[e]}</span>),o.href=o.format(),o;<span class="cstat-no" title="statement not covered" >i</span></span>f(o.protocol=t.protocol,t.host||C[t.protocol])<span class="cstat-no" title="statement not covered" >o.pathname=t.pathname;e</span>lse{<span class="cstat-no" title="statement not covered" >for(var r=(t.pathname||"").split("/");r.length&amp;&amp;!(t.host=r.shift()););<span class="cstat-no" title="statement not covered" >t</span>.host||(t.host=""),t.hostname||(t.hostname=""),""!==r[0]&amp;&amp;r.unshift(""),r.length&lt;2&amp;&amp;r.unshift(""),o.pathname=r.join("/")}<span class="cstat-no" title="statement not covered" ></span>i</span>f(o.search=t.search,o.query=t.query,o.host=t.host||"",o.auth=t.auth,o.hostname=t.hostname||t.host,o.port=t.port,o.pathname||o.search){<span class="cstat-no" title="statement not covered" >var i=o.pathname||"",a=o.search||"";<span class="cstat-no" title="statement not covered" >o</span>.path=i+a}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn o.slashes=o.slashes||t.slashes,o.href=o.format(),o}<span class="cstat-no" title="statement not covered" ></span>v</span>ar s=o.pathname&amp;&amp;"/"===o.pathname.charAt(0),c=t.host||t.pathname&amp;&amp;"/"===t.pathname.charAt(0),u=c||s||o.host&amp;&amp;t.pathname,p=u,d=o.pathname&amp;&amp;o.pathname.split("/")||[],r=t.pathname&amp;&amp;t.pathname.split("/")||[],b=o.protocol&amp;&amp;!z[o.protocol];<span class="cstat-no" title="statement not covered" >i</span>f(b&amp;&amp;(o.hostname="",o.port=null,o.host&amp;&amp;(""===d[0]?d[0]=o.host:d.unshift(o.host)),o.host="",t.protocol&amp;&amp;(t.hostname=null,t.port=null,t.host&amp;&amp;(""===r[0]?r[0]=t.host:r.unshift(t.host)),t.host=null),u=u&amp;&amp;(""===r[0]||""===d[0])),c)<span class="cstat-no" title="statement not covered" >o.host=t.host||""===t.host?t.host:o.host,o.hostname=t.hostname||""===t.hostname?t.hostname:o.hostname,o.search=t.search,o.query=t.query,d=r;e</span>lse <span class="cstat-no" title="statement not covered" >if(r.length)<span class="cstat-no" title="statement not covered" >d||(d=[]),d.pop(),d=d.concat(r),o.search=t.search,o.query=t.query;e</span>lse <span class="cstat-no" title="statement not covered" >if(!f(t.search)){<span class="cstat-no" title="statement not covered" >if(b){<span class="cstat-no" title="statement not covered" >o.hostname=o.host=d.shift();<span class="cstat-no" title="statement not covered" >v</span>ar v=o.host&amp;&amp;o.host.indexOf("@")&gt;0?o.host.split("@"):!1;<span class="cstat-no" title="statement not covered" >v</span>&amp;&amp;(o.auth=v.shift(),o.host=o.hostname=v.shift())}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn o.search=t.search,o.query=t.query,l(o.pathname)&amp;&amp;l(o.search)||(o.path=(o.pathname?o.pathname:"")+(o.search?o.search:"")),o.href=o.format(),o}<span class="cstat-no" title="statement not covered" ></span>i</span></span></span>f(!d.length)<span class="cstat-no" title="statement not covered" >return o.pathname=null,o.search?o.path="/"+o.search:o.path=null,o.href=o.format(),o;<span class="cstat-no" title="statement not covered" >f</span></span>or(var m=d.slice(-1)[0],g=(o.host||t.host)&amp;&amp;("."===m||".."===m)||""===m,y=0,w=d.length;w&gt;=0;w--)<span class="cstat-no" title="statement not covered" >m=d[w],"."==m?d.splice(w,1):".."===m?(d.splice(w,1),y++):y&amp;&amp;(d.splice(w,1),y--);<span class="cstat-no" title="statement not covered" >i</span></span>f(!u&amp;&amp;!p)<span class="cstat-no" title="statement not covered" >for(;y--;y)<span class="cstat-no" title="statement not covered" >d.unshift("..");<span class="cstat-no" title="statement not covered" >!</span></span></span>u||""===d[0]||d[0]&amp;&amp;"/"===d[0].charAt(0)||d.unshift(""),g&amp;&amp;"/"!==d.join("/").substr(-1)&amp;&amp;d.push("");<span class="cstat-no" title="statement not covered" >v</span>ar x=""===d[0]||d[0]&amp;&amp;"/"===d[0].charAt(0);<span class="cstat-no" title="statement not covered" >i</span>f(b){<span class="cstat-no" title="statement not covered" >o.hostname=o.host=x?"":d.length?d.shift():"";<span class="cstat-no" title="statement not covered" >v</span>ar v=o.host&amp;&amp;o.host.indexOf("@")&gt;0?o.host.split("@"):!1;<span class="cstat-no" title="statement not covered" >v</span>&amp;&amp;(o.auth=v.shift(),o.host=o.hostname=v.shift())}<span class="cstat-no" title="statement not covered" ></span>r</span>eturn u=u||o.host&amp;&amp;d.length,u&amp;&amp;!x&amp;&amp;d.unshift(""),d.length?o.pathname=d.join("/"):(o.pathname=null,o.path=null),l(o.pathname)&amp;&amp;l(o.search)||(o.path=(o.pathname?o.pathname:"")+(o.search?o.search:"")),o.auth=t.auth||o.auth,o.slashes=o.slashes||t.slashes,o.href=o.format(),o}</span>,n.prototype.parseHost=<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>var t=this.host,e=d.exec(t);<span class="cstat-no" title="statement not covered" >e</span>&amp;&amp;(e=e[0],":"!==e&amp;&amp;(this.port=e.substr(1)),t=t.substr(0,t.length-e.length)),t&amp;&amp;(this.hostname=t)}</span>}</span>});
+&nbsp;
+        } // end of zapla
+      };
+&nbsp;
+    } // end of bookingService function
+//   .directive('script', function($parse, $rootScope, $compile) {
+//     return {
+//         restrict: 'E',
+//         terminal: true,
+//         link: function(scope, element, attr) {
+//             if (attr.ngSrc) {
+//                  var domElem = '&lt;script src="'+attr.ngSrc+'" async defer&gt;&lt;/script&gt;';
+//                 element.append($compile(domElem)(scope));
+//             }
+//         }
+//     };
+// });
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri May 20 2016 21:25:25 GMT-0400 (EDT)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+/* inbox */
+.main-menu-toolbar {
+  color: #666 !important;
+  /*border: solid 1px #ccc  !important;*/
+  height: 24px;
+  width: 24px;
+}
+.main-menu-toolbar-button {
+  width:34px;
+  min-width:34px;
+}
+a.main-nav-links {
+    color: #848484;
+    font-weight: 500;
+    text-transform: none;
+}
+a.main-nav-links:active {
+    color: #444;
+    font-weight: 500;
+    text-transform: none;
+    padding: 9px 0;
+}
+a.main-nav-links:focus {
+    color: #444;
+    font-weight: 500;
+    text-transform: none;
+    border-bottom: 2px solid #448aff;
+    padding: 9px 0;
+}
+
+/* main css is dev css for now - ever thing wil lgo in here when it starts getting big I will split it */
+
+
+
+/* site page animation using animate.css */
+#main-content, #one-a, #one-bo, #one-c{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.15s;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.15s;
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: 0.15s;
+  /*-webkit-animation-iteration-count: infinite; this is experimental and not relevant to my site*/
+}
+/* end of animation.css information */
+
+/**
+ *  all pages
+ **/
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -ms-box-sizing: inherit;
+    -o-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.light-gray {
+    background: #f6f6f6;
+}
+
+md-toolbar.main-header {
+    background: #fff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+}
+
+
+
+.main-header a.nav-dropdown-trigger {
+    /*color: #448aff;*/
+    color: #848484;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 0;
+    width: 95%;
+}
+
+.main-navigation {
+    position: relative;
+}
+.main-header .main-navigation a.main-links {
+    color: #848484;
+}
+
+.main-header .main-navigation a.main-links:active {
+    color: #444;
+}
+
+.main-header .main-navigation a.main-links:hover {
+    color: #444;
+}
+
+.header-cta {
+    position: absolute;
+    top: -47px;
+    right: 0;
+}
+
+
+/* main */
+.section {position: relative;}
+.section2, .section-quote  {
+    padding: 68px 0 68px; /* padding: 88px 0 94px used on the quote section */
+}
+
+.main {
+    overflow: hidden;
+    width: 100%;
+}
+
+.site-width {
+    padding: 0 15px;
+}
+
+
+
+
+.md-button.md-f4f4f4 {
+    background-color:#f4f4f4 !important;
+    color: #333 !important;
+}
+
+
+.md-button.md-00c853 {
+    background: #00c853;
+    color: #fff !important;
+}
+
+.md-00c853:hover, .md-00c853:focus, a.md-00c853:hover, a.md-00c853:focus {
+    background: #43a047 !important;
+}
+
+
+.caption.card {
+    display: block;
+}
+
+.caption.card {
+    border-radius: 0;
+    /*display: none;*/
+    margin-bottom: 0;
+    padding: 15px 28px 17px;
+}
+.caption {
+    background-color: #fff;
+    border: 0 solid transparent;
+    color: #848484;
+    /*display:none;*/
+}
+
+.caption {
+    border-right-width: 3px;
+    bottom: 30px;
+    display: block;
+    min-width: 250px;
+    position: absolute;
+}
+
+.caption.aaa {
+    border-color: #aaa;
+}
+
+.caption.deep-teal {
+    border-color: #00bfa5;
+}
+/*.deep-teal {*/
+    /*background: #00bfa5;*/
+/*}*/
+
+div.myfab {
+    margin-top: -25px;
+}
+.md-button.myfab {background-color:#f4f4f4 !important; }
+
+svg.icon-fab-scroll.ng-scope polygon {
+    padding-top: 5px;
+}
+/* section-quote */
+
+
+
+
+.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark h5, .section-dark blockquote, .section-dark a {
+    color: #fff;
+}
+
+
+
+.section-dark {
+    color:#fff;
+}
+.deep-teal {
+    background:#00bfa5;
+}
+
+
+
+/* section quote */
+
+
+.cccbg {
+    background: #ccc;
+}
+
+.eeebg {
+    background: #eee;
+}
+
+blockquote {
+    font-family: 'Roboto Slab',palatino,serif;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: -.1px;
+    line-height: 28px;
+    margin: 0;
+}
+
+
+.font-medium {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+blockquote+cite {
+    display: block;
+    margin: 30px 0 0;
+}
+
+cite {
+    font-style: normal;
+}
+
+
+
+@media (min-width: 600px) {
+
+    body, md-content {
+        line-height: 22px;
+    }
+/* inbox */
+
+/*  header */
+.header-h1 {
+    margin: 0 0 0 20px;
+    padding: 20px 20px 0 10px;  /* 76 is fot the text in the real website - logo is image */
+    min-height: 47px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.main-navigation {}
+.nav-dropdown-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    top: -30px;
+    right: 165px;
+    bottom: auto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header a.nav-dropdown-trigger {
+    text-align: center;
+    /*line-height: 70px;
+    height: 70px;*/
+    display: block;
+    padding: 0 20px;
+    width: auto;
+}
+
+/**
+ * all sections
+ */
+
+ .site-width {
+     box-sizing: content-box;
+     max-width: 984px;
+     margin: 0 auto;
+ }
+
+ /**
+  * end all sections
+  */
+
+/* section-quote */
+
+    blockquote {
+        font-size: 34px;
+        line-height: 48px;
+    }
+
+    .quotation {
+        text-align: center;
+    }
+
+    .quotation-extra {
+        padding: 120px 0;
+    }
+
+    .font-medium {
+        line-height: 24px;
+    }
+
+/*sec.section-ga refers to Google analytics section CSS*/
+        .section-ga {
+            padding: 88px 0 94px;
+        }
+
+
+
+}

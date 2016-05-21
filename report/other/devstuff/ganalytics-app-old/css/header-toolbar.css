@@ -1,0 +1,10 @@
+.header-h1 {
+margin: 0 0 0 5px;
+padding: 10px 10px 0 5px;  /* 76 is fot the text in the real website - logo is image */
+min-height: 47px;
+overflow: hidden;
+position: relative;
+text-overflow: ellipsis;
+vertical-align: top;
+white-space: nowrap;
+}

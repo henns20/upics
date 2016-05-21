@@ -1,0 +1,54 @@
+//  {
+//    name": "G Ventrified",
+//    description": "A quick creative description of the pic",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images/silicon-valley/kevin-rose2.jpg",
+//    littleImage": "../assets/images-1gv-logo-icon.png",
+//    "picsId"": "g-ventrified-1"
+//  },
+//  {
+//    name": "Yahoo Ceo",
+//    description": "A quick creative description of the pic",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images/silicon-valley/mmayer-1.jpg",
+//    littleImage": "../assets/images-1yahoo-logo.png",
+//    "picsId"": "yahoo-ceo"
+//  },
+//  {
+//    name": "G Ventrified 2",
+//    description": "A quick creative description of the pic",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images/silicon-valley/phoebe-peronto.jpg",
+//    littleImage": "../assets/images-1gv-logo-icon.png",
+//    picsId": 'g-ventrified-2'
+//  },
+//  {
+//    name": "Wordpress Hero",
+//    description": "Get a photo like the J. Torke Wordpress development guru.",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images-1torke-large-1.jpeg",
+//    littleImage": ""
+//  },
+//  {
+//    name": "Iron Chef W",
+//    description": "Cat Kora was the first woman Iron Chefe",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images/cat.png",
+//    littleImage": ""
+//  },
+//  {
+//    name": "Comic Genius",
+//    description": "Get a photo inspired by the Apple executive",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images/comicbdrop250.jpg",
+//    littleImage": ""
+//  },
+//  {
+//    name": "Martha's Assistant",
+//    description": "A quick creative description of the pic",
+//    productlink": "../../app/components/product-page/product.html",
+//    profileImage": "../assets/images/silicon-valley/marthastewart-mediakit.png",
+//    littleImage": ""
+//  }
+//
+//]

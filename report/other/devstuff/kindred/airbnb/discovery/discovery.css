@@ -1,0 +1,108 @@
+/*TODO: take out things that are not needed and are common*/
+
+/*example of a thing I think is not needed*/
+divider-hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #000000;
+    height: 0;
+  }
+
+
+
+.panel-image {
+    position: relative;
+}
+
+.listing-img {
+    overflow: hidden;
+    padding-bottom: 67%;
+}
+.discovery-section h2 {
+    margin: 0;
+}
+/*example of a thing I think is common*/
+.row-space-2 {
+    margin-bottom: 12.5px;
+}
+
+.row-space-6 {
+    margin-bottom: 37.5px;
+}
+
+
+.media-caption {
+    padding: 25px 15px 15px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(transparent, rgba(0,0,0,0.8));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0,0,0,0.8)));
+    background-image: -moz-linear-gradient(transparent, rgba(0,0,0,0.8));
+    background-image: -o-linear-gradient(transparent, rgba(0,0,0,0.8));
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.8));
+    filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#CC000000', GradientType=0);";
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.discovery-image {
+    min-height: 436px;
+}
+
+.media-photo-block {
+    display: block;
+}
+.media-photo {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: hidden;
+    background-color: #cacccd;
+}
+
+
+.media-cover, .media-cover-dark:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+figure {
+    margin: 0;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+.img-responsive-height {
+
+  height: 100%;
+  width: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+@media (max-width: 960px){
+.discovery-image {
+    min-height: 200px;}
+}

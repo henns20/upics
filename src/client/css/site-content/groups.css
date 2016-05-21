@@ -1,0 +1,73 @@
+.darkred-breaker {
+  background: darkred;
+  height: 15px;
+  border-top: solid 1px #eee;
+  border-bottom: solid 1px #eee;
+}
+.google-red {
+    background: #ff5252;
+    /*background: #C62828;*/
+    color: #ffffff;
+}
+
+.section-sub-heading.border-google-red:after {
+    background-color: #ff5252;
+}
+.google-red h1 {
+    color: #ffffff;
+}
+.hero-img-groups {
+
+    background-image: url('../../images/hero-media-image/burnabybeerfest-groups-hero.jpg');
+    /*background-image: url('../imgs/hero-745-624.png');*/
+}
+
+.hero-img-custom-services {
+    background-image: url('../../images/hero-media-image/computer-coffee-camera.jpg');
+}
+
+.hero-image-groups {
+    background-position: left center;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.for-g md-tab-item:not(:last-child) {
+    border-right: solid 1px #d4d4d4;
+}
+.for-g md-tabs-wrapper {
+    padding: 30px 35px 30px 10px;
+}
+
+.for-g md-tabs-canvas, .for-g .md-tab {
+    height:80px;
+}
+
+.for-g md-pagination-wrapper {
+    height: 80px;
+}
+.for-g md-tab-item:first-child {
+    padding-left: 0px;
+}
+.font-medium {
+    line-height: 24px;
+    font-size: 16px;
+}
+.for-g .tabcordian-icon {
+    margin-right:20px;
+    color: #ff5252;
+    font-size:28px;
+}
+
+.for-g md-tabs .md-tab.md-active, md-tabs .md-tab.md-focused {
+    color: #444;
+}
+
+.for-g md-tabs md-ink-bar {
+    color: #ff5252;
+    background: #ff5252;
+}

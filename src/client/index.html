@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html ng-app="ganalytics">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/"> -->
+    <title>Ganalytics- Standard</title>
+
+    <!-- manually injected fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&lang=en" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&lang=en" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Product+Sans:400&lang=en" rel="stylesheet">
+    <!-- end of manually injected fonts -->
+
+    <!-- build:css css/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/src/client/css/animate.css">
+    <link rel="stylesheet" href="/src/client/css/footer.css">
+    <link rel="stylesheet" href="/src/client/css/header-toolbar.css">
+    <link rel="stylesheet" href="/src/client/css/home.css">
+    <link rel="stylesheet" href="/src/client/css/main.css">
+    <link rel="stylesheet" href="/src/client/css/sandbox.css">
+    <link rel="stylesheet" href="/src/client/css/site-colors.css">
+    <link rel="stylesheet" href="/src/client/css/typography.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/contact.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/discover.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/gallery.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/groups.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/home.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/how-it-works.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/pics-detail.css">
+    <link rel="stylesheet" href="/src/client/css/site-content/shell.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+    
+</head>
+<body ng-controller="MdSideBarCtrl">
+
+ <ng-include src="'app/layout/sidebar.html'">
+
+ </ng-include>
+
+ <div id="shell">
+   <header>
+     <topnav></topnav>
+
+   </header>
+
+   <!-- Main content area  -->
+<div class="main"  role="main " layout="column">
+     <div ui-view name="maincontent" id="main-content" class="animated fadeIn"></div>
+   </div>
+   <footer ng-include="'app/layout/footer.html'" class="footer" id="footer" layout="row">
+
+   </footer>
+ </div>
+
+
+ <!-- build:js js/lib.js -->
+ <!-- bower:js -->
+ <script src="/bower_components/angular/angular.js"></script>
+ <script src="/bower_components/angular-animate/angular-animate.js"></script>
+ <script src="/bower_components/angular-aria/angular-aria.js"></script>
+ <script src="/bower_components/angular-messages/angular-messages.js"></script>
+ <script src="/bower_components/angular-material/angular-material.js"></script>
+ <script src="/bower_components/angular-resource/angular-resource.js"></script>
+ <script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+ <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+ <!-- endbower -->
+ <!-- endbuild -->
+
+
+ <!-- build:js js/app.js -->
+ <!-- inject:js -->
+ <script src="/src/client/app/app.module.js"></script>
+ <script src="/src/client/app/core/core.module.js"></script>
+ <script src="/src/client/app/site-content/site-content.module.js"></script>
+ <script src="/src/client/app/components/angular-material/material.module.js"></script>
+ <script src="/src/client/app/components/angular-material/mdsidebar/mdsidebar.module.js"></script>
+ <script src="/src/client/app/core/scroll-top.js"></script>
+ <script src="/src/client/app/gallery/asyn-architecting-cbsvspromitse.js"></script>
+ <script src="/src/client/app/gallery/gallery.controller.js"></script>
+ <script src="/src/client/app/gallery/gallery.route.js"></script>
+ <script src="/src/client/app/gallery-snapshot/gallery-snapshot.controller.js"></script>
+ <script src="/src/client/app/layout/ganalytics.layout.js"></script>
+ <script src="/src/client/app/pics-detail/pics-detail.controller.js"></script>
+ <script src="/src/client/app/pics-detail/pics-detail.route.js"></script>
+ <script src="/src/client/app/services/photographers.service.js"></script>
+ <script src="/src/client/app/site-content/site-content.routes.js"></script>
+ <script src="/src/client/app/components/booking/booking-directive.js"></script>
+ <script src="/src/client/app/components/filters/filters.js"></script>
+ <script src="/src/client/app/layout/shell/shell-directive.js"></script>
+ <script src="/src/client/app/layout/topnav/topnav-directive.js"></script>
+ <script src="/src/client/app/layout/topnav/topnav.js"></script>
+ <script src="/src/client/app/services/picsservice/pics-simple.service.js"></script>
+ <script src="/src/client/app/services/picsservice/pics.service.js"></script>
+ <script src="/src/client/app/components/angular-material/mdsidebar/mdsidebar.controller.js"></script>
+ <!-- endinject -->
+
+ <!-- inject:templates:js -->
+ <!-- endinject -->
+ <!--endbuild -->
+
+</body>
+</html>
