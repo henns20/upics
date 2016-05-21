@@ -2,6 +2,7 @@ bower_components
 node_modules
 .idea
 .DS_STORE
-temp
+tmp
 npm-debug.log
 build
+other

@@ -1,5 +1,5 @@
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/app.module.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/app.module.js
 FN:1,(anonymous_1)
 FN:21,(anonymous_2)
 FNF:2
@@ -16,7 +16,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/components/angular-material/material.module.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/components/angular-material/material.module.js
 FN:1,(anonymous_1)
 FNF:1
 FNH:1
@@ -29,7 +29,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/components/angular-material/mdsidebar/mdsidebar.module.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/components/angular-material/mdsidebar/mdsidebar.module.js
 FN:4,(anonymous_1)
 FNF:1
 FNH:1
@@ -42,7 +42,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/core/core.module.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/core/core.module.js
 FN:1,(anonymous_1)
 FNF:1
 FNH:1
@@ -55,7 +55,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/site-content/site-content.module.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/site-content/site-content.module.js
 FN:1,(anonymous_1)
 FNF:1
 FNH:1
@@ -68,7 +68,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/components/angular-material/mdsidebar/mdsidebar.controller.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/components/angular-material/mdsidebar/mdsidebar.controller.js
 FN:1,(anonymous_1)
 FN:6,(anonymous_2)
 FN:9,(anonymous_3)
@@ -143,7 +143,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/components/booking/booking-directive.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/components/booking/booking-directive.js
 FN:4,bookingDirective
 FN:7,(anonymous_2)
 FN:25,bookingService
@@ -1132,7 +1132,7 @@ BRF:709
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/components/filters/filters.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/components/filters/filters.js
 FN:7,(anonymous_1)
 FN:8,(anonymous_2)
 FN:18,(anonymous_3)
@@ -1168,7 +1168,7 @@ BRF:4
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/core/scroll-top.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/core/scroll-top.js
 FN:1,(anonymous_1)
 FN:11,(anonymous_2)
 FN:20,(anonymous_3)
@@ -1187,7 +1187,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/gallery-snapshot/gallery-snapshot.controller.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/gallery-snapshot/gallery-snapshot.controller.js
 FN:1,(anonymous_1)
 FN:6,GallerySnapshotController
 FN:9,(anonymous_3)
@@ -1212,7 +1212,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/gallery/asyn-architecting-cbsvspromitse.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/gallery/asyn-architecting-cbsvspromitse.js
 FNF:0
 FNH:0
 LF:0
@@ -1221,7 +1221,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/gallery/gallery.controller.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/gallery/gallery.controller.js
 FN:8,GalleryController
 FN:22,activate
 FN:24,(anonymous_3)
@@ -1330,7 +1330,7 @@ BRF:13
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/gallery/gallery.route.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/gallery/gallery.route.js
 FN:1,(anonymous_1)
 FN:8,stateConfig
 FNF:2
@@ -1347,7 +1347,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/layout/ganalytics.layout.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/layout/ganalytics.layout.js
 FN:1,(anonymous_1)
 FNF:1
 FNH:1
@@ -1360,7 +1360,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/layout/shell/shell-directive.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/layout/shell/shell-directive.js
 FN:1,(anonymous_1)
 FN:8,directive
 FNF:2
@@ -1378,7 +1378,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/layout/topnav/topnav-directive.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/layout/topnav/topnav-directive.js
 FN:1,(anonymous_1)
 FN:8,directive
 FNF:2
@@ -1395,7 +1395,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/layout/topnav/topnav.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/layout/topnav/topnav.js
 FNF:0
 FNH:0
 LF:0
@@ -1404,7 +1404,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/pics-detail/pics-detail.controller.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/pics-detail/pics-detail.controller.js
 FN:5,(anonymous_1)
 FN:6,(anonymous_2)
 FN:12,(anonymous_3)
@@ -1429,7 +1429,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/pics-detail/pics-detail.route.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/pics-detail/pics-detail.route.js
 FN:1,(anonymous_1)
 FN:8,stateConfig
 FNF:2
@@ -1446,7 +1446,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/services/photographers.service.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/services/photographers.service.js
 FN:1,(anonymous_1)
 FN:8,photographersService
 FN:12,(anonymous_3)
@@ -1466,7 +1466,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/services/picsservice/pics-simple.service.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/services/picsservice/pics-simple.service.js
 FN:1,(anonymous_1)
 FN:8,picsSimple
 FN:15,testf
@@ -1535,7 +1535,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/services/picsservice/pics.service.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/services/picsservice/pics.service.js
 FN:6,(anonymous_1)
 FNF:1
 FNH:0
@@ -1548,7 +1548,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/ganalytics-1.0/src/client/app/site-content/site-content.routes.js
+SF:/Users/john/more-yellowdev/fsj/ym-apps/upicsProject/upics/src/client/app/site-content/site-content.routes.js
 FN:1,(anonymous_1)
 FN:12,stateConfig
 FNF:2
