@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="ganalytics">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <base href="/"> -->
+    <title>Ganalytics- Standard</title>
+
+    <!-- manually injected fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&lang=en" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:300,400,500&lang=en" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Product+Sans:400&lang=en" rel="stylesheet">
+    <!-- end of manually injected fonts -->
+
+    <link rel="stylesheet" href="css/lib-3d65fcad51.css">
+
+    <link rel="stylesheet" href="css/app-b1477dbbe1.css">
+    
+</head>
+<body ng-controller="MdSideBarCtrl">
+
+ <ng-include src="'app/layout/sidebar.html'">
+
+ </ng-include>
+
+ <div id="shell">
+   <header>
+     <topnav></topnav>
+
+   </header>
+
+   <!-- Main content area  -->
+<div class="main"  role="main " layout="column">
+     <div ui-view name="maincontent" id="main-content" class="animated fadeIn"></div>
+   </div>
+   <footer ng-include="'app/layout/footer.html'" class="footer" id="footer" layout="row">
+
+   </footer>
+ </div>
+
+
+ <script src="js/lib-ec88344fba.js"></script>
+
+
+ <script src="js/app-d7bacdfba7.js"></script>
+
+</body>
+</html>
