@@ -4,6 +4,6 @@ node_modules
 .DS_STORE
 tmp
 npm-debug.log
-build
+# build
 other
 report
