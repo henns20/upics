@@ -11,7 +11,7 @@
     .run(function ($rootScope) {
 
       /**
-       * TODO: clean description
+       * TODO: clean this description
        * @desc positions scroll at the top when clicking
        * through links when down the page on site content pages
        * default behavior: position scrollbar exact same
