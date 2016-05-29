@@ -1,22 +1,25 @@
 (function () {
 
 'use strict';
-
+  // TODO:  check core module in play-by-play to see if should inject all dependencies in their as well as the routes below
   /*****
    * @ngInject
    *****/
   angular
     .module('ganalytics', [
+      'ganalytics.components',
+      'ganalytics.core',
+      'ganalytics.layout',
+      'ganalytics.siteContent',
       'ngAnimate',
       'ngMaterial',
       'ngAria',
       'ui.router',
-      'ngResource',
-      'my.angular.material',
-      'ganalytics.layout',
-      'ganalytics.core',
-      'ganalytics.siteContent'
+      'ngResource'
     ])
+    /*****
+     * @ngInject
+     *****/
     .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$provide',
             function($stateProvider, $urlRouterProvider, $locationProvider, $provide) {
               $stateProvider
@@ -30,22 +33,12 @@
                 });
 
               $urlRouterProvider.otherwise('/home');
-            //  $locationProvider.html5Mode({
-            //     enabled: true
-            //     // requireBase: false
-            //  });
-            //
 
-            // another way to try to fix scroll top issue did not work for me
-            // http://stackoverflow.com/questions/22290570/angular-ui-router-scroll-to-top-not-to-ui-view
-      // $provide.decorator('$uiViewScroll', function ($delegate) {
-      //   return function (uiViewElement) {
-      //     var top = uiViewElement.getBoundingClientRect().top;
-      //     window.scrollTo(0, (top - 30));
-      //     // Or some other custom behaviour...
-      //   };
-      // });
-
-    }])
+              // TODO:  resolve this, should use or delete
+              //  $locationProvider.html5Mode({
+              //     enabled: true
+              //     // requireBase: false
+              //  });
+    }]);
 
   })();

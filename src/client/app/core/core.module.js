@@ -1,8 +1,7 @@
-(function () {
+(function() {
+    'use strict';
 
-  'use strict';
-
-  angular
-    .module('ganalytics.core', []);
+    angular
+        .module('ganalytics.core', []);
 
 })();

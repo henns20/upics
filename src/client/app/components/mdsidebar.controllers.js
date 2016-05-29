@@ -2,7 +2,12 @@
   'use strict';
 
   angular
-    .module('material.mdsidebar')
+    .module('ganalytics.components')
+
+    // angular material no directive needed ?? TODO:  confirm convention
+    /*****
+     * @ngInject
+     *****/
     .controller('MdSideBarCtrl', function ($scope, $timeout, $mdSidenav, $log) {
       $scope.toggleLeft = buildDelayedToggler('left');
       $scope.toggleRight = buildToggler('right');
@@ -48,6 +53,9 @@
         };
       }
     })
+    /*****
+     * @ngInject
+     *****/
     .controller('LeftSidebarCtrl', function ($scope, $timeout, $mdSidenav, $log) {
         $scope.close = function () {
           $mdSidenav('left').close()
@@ -56,6 +64,9 @@
             });
         };
       })
+      /*****
+       * @ngInject
+       *****/
       .controller('RightSidebarCtrl', function ($scope, $timeout, $mdSidenav, $log) {
         $scope.close = function () {
           $mdSidenav('right').close()
